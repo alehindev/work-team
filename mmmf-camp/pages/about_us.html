@@ -9,8 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles/css/about_us_style.css">
-        
+    <link rel="stylesheet" href="../styles/css/about_us_style.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Выездные школы МММФ</title>
 </head>
@@ -28,7 +28,7 @@
         <main class="main">
             <aside class="sidebar">
                 <nav class="navbar">
-                    <a href="index.html" class="navbar__link">
+                    <a href="./../index.html" class="navbar__link">
                         Выездные школы
                     </a>
                     <a href="" class="navbar__link">
@@ -50,17 +50,29 @@
                 </p>
             </aside>
             <section class="content">
-                <p class="content__title">МММФ – это онлайн и оффлайн школа,<br> 
-                    выездные лагеря и олимпиадные физика и математика</p>
-                <p class="content__subtitle">наши преподаватели</p>
-                <div class="buttons-container">
-                    <button class="buttons-container__button button_clicked" id="btn-1"><p class="button-text">Руководители смен</p></button>
-                    <button class="buttons-container__button" id="btn-2"><p class="button-text">Преподаватели математики</p></button>
-                    <button class="buttons-container__button" id="btn-3"><p class="button-text">Преподаватели физики</p></button>
-                    <button class="buttons-container__button" id="btn-4"><p class="button-text">Преподаватели химии</p></button>
+                <div class="content-name">
+                    <p class="content-name__title">МММФ – это онлайн и оффлайн школа,<br>
+                        выездные лагеря и олимпиадные физика и математика</p>
+
                 </div>
-                <div class="teachers">
-                    <!--<div class="teacher-profile">
+                <div class="our-teachers">
+                    <h2 class="our-teachers__title">наши преподаватели</h2>
+                    <div class="buttons-container">
+                        <button class="buttons-container__button button_clicked" id="btn-1">
+                            <p class="button-text">Руководители смен</p>
+                        </button>
+                        <button class="buttons-container__button" id="btn-2">
+                            <p class="button-text">Преподаватели математики</p>
+                        </button>
+                        <button class="buttons-container__button" id="btn-3">
+                            <p class="button-text">Преподаватели физики</p>
+                        </button>
+                        <button class="buttons-container__button" id="btn-4">
+                            <p class="button-text">Преподаватели химии</p>
+                        </button>
+                    </div>
+                    <div class="teachers">
+                        <!--<div class="teacher-profile">
                         <h3 class="teacher-profile__title">
                             Коробицын<br>Дмитрий<br>Александрович
                         </h3>
@@ -116,14 +128,15 @@
                             Выпускник ФМ-класса Школы № 1329<br><br>
                             Администратор по связям с общественностью
                         </p>
-                    </div>-->
+                </div>-->
+                    </div>
                 </div>
             </section>
         </main>
     </div>
 </body>
 
-<script src="js/about_us.js"></script>
+<script src="./../js/about_us.js"></script>
 
 </html>
 

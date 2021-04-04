@@ -48,9 +48,15 @@ body {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__tel {
@@ -66,9 +72,15 @@ body {
   border-radius: 1.11111rem;
   width: 15rem;
   height: 3.88889rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo__title {
@@ -83,17 +95,27 @@ body {
   margin: 0px;
   padding: 0px;
   margin-top: 2.6rem;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 19rem 1fr;
-  grid-template-rows: 1fr;
+  -ms-grid-columns: 19rem 1fr;
+      grid-template-columns: 19rem 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   grid-gap: 2.55556rem;
 }
 
 .sidebar {
   height: 47.77778rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sidebar__copyrights {
@@ -103,8 +125,13 @@ body {
 }
 
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .navbar__link {
@@ -117,13 +144,16 @@ body {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  /*grid-template-columns: 1fr;
-    grid-gap: (21/$rf)*1rem;*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  max-width: 7.38889rem;
 }
 
-.content__title {
+.content-name__title {
+  margin: 0rem;
+  padding: 0rem;
   font-weight: 500;
   font-style: normal;
   font-size: 1.66667rem;
@@ -131,27 +161,28 @@ body {
   margin-top: 0;
 }
 
-.content__subtitle {
-  font-weight: 900;
-  font-style: normal;
-  font-size: 2.22222rem;
-  text-transform: uppercase;
-  line-height: 2.72222rem;
-  margin-top: 5rem;
-}
-
 .teachers {
+  display: -ms-grid;
   display: grid;
   grid-gap: 1.16667rem;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .teacher-profile {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /*max-width: 656/$rf * 1rem;
     max-height: 450/$rf *1rem;*/
   min-width: 36.44444rem;
@@ -200,13 +231,36 @@ body {
   border-radius: 1.11111rem;
 }
 
+.our-teachers {
+  margin: 0rem;
+  padding: 0rem;
+  margin-top: 5rem;
+}
+
+.our-teachers__title {
+  margin: 0rem;
+  padding: 0rem;
+  margin-bottom: 2.77778rem;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.22222rem;
+  text-transform: uppercase;
+  line-height: 2.72222rem;
+}
+
 .buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-bottom: 3.05556rem;
 }
 
 .buttons-container__button {
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   display: table-cell;
   text-align: center;
@@ -253,9 +307,12 @@ body {
 
 @media (max-width: 1200px) {
   .content {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     grid-gap: 1.16667rem;
   }
 }
