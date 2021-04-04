@@ -110,7 +110,22 @@ body {
             font-weight: 800;
             padding-bottom: (40/$rf)*1rem;
             outline: none;
+            position: relative;
 		}
+        &__link:hover:before {
+            content: '';
+            position: absolute;
+            left: -35%;
+            top: 15%;
+            width: 5.5rem;
+            height: 3px;
+            background-color: #6B95FF;
+		}
+        
+        
+        &__link-clicked {
+            color: #6B95FF;
+        }
 }
 .content {
     display: grid;
@@ -118,7 +133,6 @@ body {
     grid-gap: (21/$rf)*1rem;
 }
 .article-box {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
