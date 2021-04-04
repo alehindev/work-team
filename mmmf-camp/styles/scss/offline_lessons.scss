@@ -283,6 +283,10 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 54/$rf *1rem;
     margin-top: 49/$rf*1rem;
+    @media (max-width: 1440px) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 54/$rf *1rem;
+    }
 }
 .magazine-frst {
     
@@ -352,6 +356,7 @@ body {
             text-align: left;
             max-width: 410/$rf*1rem;
 		}
+    margin-bottom: 34/$rf*1rem;
 }
 .form-btn {
     transition: all 0.2s ease;
@@ -368,7 +373,7 @@ body {
     border-radius: 40/$rf *1rem;
     background-color: #6B95FF;
     color: #fff;
-
+    
 	&__text{
         font-family: Montserrat;
         font-size: 18/$rf * 1rem;
@@ -395,41 +400,184 @@ body {
 }
 
 .price-list {
-    d
+    display: flex;
+    flex-direction: column;
 		&__title {
+            padding: 0rem;
+            margin: 0rem;
+            margin-bottom: 27/$rf *1rem;
+            font-family: Montserrat;
+            font-size: 18/$rf *1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 23/$rf *1rem;
+            letter-spacing: 0rem;
+            text-align: left;
+
 		}
 }
 .list {
+    display: flex;
+    flex-direction: column;
 }
+
 .list-column {
+    height: 96/$rf*1rem;
+    border-radius: 10/$rf*1rem;
+    border-style: solid;
+    border-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25/$rf*1rem;
+    padding-right: 89/$rf*1rem;
+    &__white-line{
+        background-color: #fff;
+        width: 2px;
+        height: 64/$rf*1rem;
+    }
+    &__gray-line{
+        background-color: #D7E2FF;
+        width: 2px;
+        height: 64/$rf*1rem;
+    }
+}
+.list-column-white{
+    background-color: #fff;
+}
+.list-column-gray{
+    background-color: #D7E2FF;
+
 }
 .price-description {
-
+    width: 308/$rf*1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 		&__title {
-		}
-
+            padding: 0rem;
+            margin: 0rem;
+            font-family: Montserrat;
+            font-size: 18/$rf*1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22/$rf*1rem;
+            letter-spacing: 0rem;
+            text-align: left;
+        }
 		&__subtitle {
+            padding: 0rem;
+            margin: 0rem;
+            margin-top: 5/$rf*1rem;
+            font-family: Montserrat;
+            font-size: 14/$rf*1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17/$rf*1rem;
+            letter-spacing: 0rem;
+            text-align: left;
+
 		}
 }
-.cost {
 
+.cost {
+    width: 140/$rf*1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 		&__title {
+            padding: 0rem;
+            margin: 0rem;
+            font-family: Montserrat;
+            font-size: 26/$rf*1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32/$rf*1rem;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 8/$rf*1rem;
+
 		}
 
 		&__subtitle {
-		}
+
+            padding: 0rem;
+            margin: 0rem;
+            font-family: Montserrat;
+            font-size: 14/$rf*1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17/$rf*1rem;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
 }
 .magazine-sec {
-
+        
 		&__paragraph-higlited {
+            margin: 0rem;
+            font-family: Montserrat;
+            font-size: 26/$rf*1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32/$rf*1rem;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 63/$rf*1rem;
 		}
 
 		&__main-info {
+            margin: 0rem;
+            font-family: Montserrat;
+            font-size: 18/$rf*1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22/$rf*1rem;
+            letter-spacing: 0rem;
+            text-align: left;
+            margin-bottom: 39/$rf*1rem;
 		}
 
 		&__location {
+            margin: 0rem;
+            font-family: Montserrat;
+            font-size: 18/$rf*1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23/$rf*1rem;
+            letter-spacing: 0rem;
+            text-align: left;
+            margin-bottom: 60/$rf*1rem;
 		}
 
 		&__contacts {
+            margin: 0rem;
+            font-family: Montserrat;
+            font-size: 18/$rf*1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23/$rf*1rem;
+            letter-spacing: 0rem;
+            text-align: left;
+            position: relative;
 		}
 }
+/*
+.noskov::after{
+    content: '(руководитель учебных программ)';
+    position: absolute;
+    bottom: -18%;
+    right: 7%;
+    font-family: Montserrat;
+    font-size: 14/$rf*1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18/$rf*1rem;
+    letter-spacing: 0rem;
+    text-align: left;
+
+}
+*/
