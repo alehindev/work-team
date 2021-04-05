@@ -509,11 +509,10 @@ body {
             z-index: -2;
         }
         
-    &__text{
-
-        font-weight: 500;
-        font-size: 30/$rf *1rem;
-        font-style: normal;
-        line-height: 36.6/$rf *1rem;
-    }
+        &__text{
+            font-weight: 500;
+            font-size: 30/$rf *1rem;
+            font-style: normal;
+            line-height: 36.6/$rf *1rem;
+        }
 }
