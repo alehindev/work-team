@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 16px;
 }
@@ -341,6 +342,14 @@ body {
   margin-top: 2.72222rem;
 }
 
+@media (max-width: 1440px) {
+  .magazine {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 3rem;
+  }
+}
+
 .magazine-frst__title {
   padding: 0rem;
   margin: 0rem;
@@ -403,6 +412,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1.88889rem;
 }
 
 .form__title {
@@ -462,3 +472,223 @@ body {
 .form-btn_clicked:hover {
   cursor: auto;
 }
+
+.price-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.price-list__title {
+  padding: 0rem;
+  margin: 0rem;
+  margin-bottom: 1.5rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.27778rem;
+  letter-spacing: 0rem;
+  text-align: left;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.list-column {
+  height: 5.33333rem;
+  border-radius: 0.55556rem;
+  border-style: solid;
+  border-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.38889rem;
+  padding-right: 4.94444rem;
+}
+
+.list-column__white-line {
+  background-color: #fff;
+  width: 2px;
+  height: 3.55556rem;
+}
+
+.list-column__gray-line {
+  background-color: #D7E2FF;
+  width: 2px;
+  height: 3.55556rem;
+}
+
+.list-column-white {
+  background-color: #fff;
+}
+
+.list-column-gray {
+  background-color: #D7E2FF;
+}
+
+.price-description {
+  width: 17.11111rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.price-description__title {
+  padding: 0rem;
+  margin: 0rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22222rem;
+  letter-spacing: 0rem;
+  text-align: left;
+}
+
+.price-description__subtitle {
+  padding: 0rem;
+  margin: 0rem;
+  margin-top: 0.27778rem;
+  font-family: Montserrat;
+  font-size: 0.77778rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.94444rem;
+  letter-spacing: 0rem;
+  text-align: left;
+}
+
+.cost {
+  width: 7.77778rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cost__title {
+  padding: 0rem;
+  margin: 0rem;
+  font-family: Montserrat;
+  font-size: 1.44444rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.77778rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0.44444rem;
+}
+
+.cost__subtitle {
+  padding: 0rem;
+  margin: 0rem;
+  font-family: Montserrat;
+  font-size: 0.77778rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.94444rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.magazine-sec__paragraph-higlited {
+  margin: 0rem;
+  font-family: Montserrat;
+  font-size: 1.44444rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.77778rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 3.5rem;
+}
+
+.magazine-sec__main-info {
+  margin: 0rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22222rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  margin-bottom: 2.16667rem;
+}
+
+.magazine-sec__location {
+  margin: 0rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.27778rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  margin-bottom: 3.33333rem;
+}
+
+.magazine-sec__contacts {
+  margin: 0rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.27778rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  position: relative;
+}
+
+/*
+.noskov::after{
+    content: '(руководитель учебных программ)';
+    position: absolute;
+    bottom: -18%;
+    right: 7%;
+    font-family: Montserrat;
+    font-size: 14/$rf*1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18/$rf*1rem;
+    letter-spacing: 0rem;
+    text-align: left;
+
+}
+*/
