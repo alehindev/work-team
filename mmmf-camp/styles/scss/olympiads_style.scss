@@ -204,7 +204,7 @@ body {
     display: flex;
     flex-direction: column;
     &__img{
-        background-image: url("/img/olympiads_jpg/olympiad_img.jpg");
+        background-image: url("./../../img/olympiads_jpg/olympiad_img.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

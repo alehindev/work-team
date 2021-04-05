@@ -261,12 +261,12 @@ body {
   cursor: auto;
 }
 
-.article {
+.traveling-schools {
   padding: 0rem;
   margin: 0rem;
 }
 
-.article__title {
+.traveling-schools__title {
   padding: 0rem;
   margin: 0rem;
   font-family: Montserrat;
@@ -277,10 +277,9 @@ body {
   letter-spacing: 0rem;
   text-align: left;
   margin-bottom: 2.16667rem;
-  text-transform: uppercase;
 }
 
-.article__img {
+.traveling-schools__img {
   height: 19.27778rem;
   border-color: transparent;
   border-width: 0px;
@@ -289,7 +288,7 @@ body {
   margin-bottom: 3.33333rem;
 }
 
-.article__img::after {
+.traveling-schools__img::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -303,7 +302,7 @@ body {
   z-index: -1;
 }
 
-.article__img:before {
+.traveling-schools__img:before {
   content: "";
   width: 100%;
   height: 100%;
@@ -318,12 +317,204 @@ body {
   z-index: -2;
 }
 
-.article__paragraph {
+.traveling-schools__paragraph {
   font-family: Montserrat;
   font-size: 1.66667rem;
   font-style: normal;
   font-weight: 500;
   line-height: 2.05556rem;
   letter-spacing: 0rem;
+  text-align: left;
+}
+
+.winter-school {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.winter-school__title {
+  padding: 0rem;
+  margin: 0rem;
+  font-family: Montserrat;
+  font-size: 2.22222rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.72222rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  margin-bottom: 2.44444rem;
+}
+
+.article-nav-wsh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 3.88889rem;
+}
+
+.article-nav-btn {
+  margin: 0rem;
+  padding: 0rem;
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+}
+
+.article-nav-btn__clicked {
+  color: #6B95FF;
+}
+
+.article-nav-btn__text {
+  margin: 0rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22222rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.etnomir {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3.61111rem;
+}
+
+.etnomir__text {
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.27778rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  margin: 0rem;
+}
+
+.form-btn {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: auto;
+  width: auto;
+  padding-left: 1.83333rem;
+  padding-right: 1.83333rem;
+  padding-top: 1.05556rem;
+  padding-bottom: 1.05556rem;
+  border: 0.16667rem solid #6B95FF;
+  border-radius: 2.22222rem;
+  background-color: #6B95FF;
+  color: #fff;
+}
+
+.form-btn__text {
+  font-family: Montserrat;
+  font-size: 1rem;
+  line-height: 1.22222rem;
+  font-weight: 700;
+  margin: 0rem;
+}
+
+.form-btn:hover {
+  color: #6B95FF;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.form-btn:focus {
+  outline: none;
+}
+
+.form-btn_clicked {
+  color: white;
+  background-color: #6B95FF;
+}
+
+.form-btn_clicked:hover {
+  cursor: auto;
+}
+
+.etnomir-light-text {
+  margin-bottom: 2.22222rem;
+}
+
+.warning {
+  margin-top: 2.22222rem;
+  border-color: transparent;
+  border-width: 0.16667rem;
+  border-style: solid;
+  border-top-color: #FF5656;
+}
+
+.warning__text {
+  font-family: Montserrat;
+  font-size: 1.11111rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.33333rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  color: #FF5656;
+  border-radius: 1.11111rem;
+}
+
+.etnomir-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.etnomir-list {
+  background-color: #D7E2FF;
+  border-radius: 1.11111rem;
+  padding: 1.83333rem 1.44444rem;
+  margin-bottom: 1.11111rem;
+}
+
+.etnomir-list__title {
+  margin: 0rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22222rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  color: black;
+  margin-bottom: 1.38889rem;
+}
+
+.etnomir-list__text {
+  margin: 0rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.27778rem;
+  letter-spacing: 0em;
   text-align: left;
 }
