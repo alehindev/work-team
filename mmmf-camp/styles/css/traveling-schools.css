@@ -277,6 +277,7 @@ body {
   letter-spacing: 0rem;
   text-align: left;
   margin-bottom: 2.16667rem;
+  text-transform: uppercase;
 }
 
 .article__img {
