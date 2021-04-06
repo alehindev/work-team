@@ -10,40 +10,37 @@
 
 $rf: 18;
 
-
-
-
 html {
-    font-size: 16px;
-    @media (max-width: 360px) {
-        font-size: 9px;
+    font-size: 12px;
+    @media screen and (min-width: 1px) and (max-width: 359px) {
+        font-size: 12px;
+    }   
+    @media screen and (min-width: 360px) and (max-width: 450px) {
+        font-size: 13px;
     }
-    @media (max-width: 450px) {
+    @media screen and (min-width: 451px) and (max-width: 599px) {
         font-size: 14px;
     }
-    @media (max-width: 600px) {
-        font-size: 16px;
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        font-size: 15px;
     }
-    @media (max-width: 767px) {
-        font-size: 18px;
+    @media screen and (min-width: 768px) and (max-width: 1040px) {
+        font-size: 11px;
     }
-    @media (max-width: 1023px) {
-        font-size: 14px;
-    }
-    @media (max-width: 1200px) {
+    @media screen and (min-width: 1023px) and (max-width: 1300px) {
         font-size: 12px;
     }
-    @media (max-width: 1400px) {
+    @media screen and (min-width: 1301px) and (max-width: 1400px) {
+        font-size: 13px;
+    }
+    @media screen and (min-width: 1401px) and (max-width: 1600px) {
         font-size: 14px;
     }
-    @media (max-width: 1600px) {
-        font-size: 16px;
-    }
-    @media (max-width: 1920px) {
+    @media screen and (min-width: 1601px) and (max-width: 1921px)  {
         font-size: 17px;
     }
-    @media (max-width: 2560px) {
-        font-size: 19px;
+    @media screen and (min-width: 1922px) and (max-width: 2560px) {
+        font-size: 21px;
     }
 }
 
@@ -146,9 +143,8 @@ body {
         }
 }
 .content {
-    display: grid;
-    grid-template-columns: 1fr;
-    
+    display: flex;
+    flex-direction: column;
 }
 .content-name {
 		&__title {
@@ -166,10 +162,9 @@ body {
 
 
 .teachers{
-    display: grid;
-    grid-gap: (21/$rf)*1rem;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .teacher-profile{
@@ -177,13 +172,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*max-width: 656/$rf * 1rem;
-    max-height: 450/$rf *1rem;*/
-    min-width: 656/$rf * 1rem;
-    min-height: 450/$rf *1rem;
+    margin-bottom: 21/$rf*1rem;
+    margin-left: 21/$rf*1rem;
+    width: 656/$rf * 1rem;
+    height: 450/$rf *1rem;
     &__title{
         position: relative;
-        margin-left: 33/$rf * 1rem;
+        margin-left: 33/$rf * 1rem; 
         margin-top:  83/$rf * 1rem;
         font-size: 30/$rf *1rem;
         font-weight: 700;
@@ -210,6 +205,7 @@ body {
         line-height: 22/$rf *1rem;
         overflow-wrap: break-word;
     }
+    
 }
 
 .teacher-profile::before{
@@ -241,6 +237,7 @@ body {
 .buttons-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 55/$rf *1rem;
 	
     
@@ -260,6 +257,7 @@ body {
         border-radius: 40/$rf *1rem;
         color: #6B95FF;
         background-color: transparent;
+        margin-bottom: 15/$rf *1rem;
     }
     &__button:hover{
         color: black;
@@ -286,7 +284,7 @@ body {
     font-weight: 700;
     margin: 0;
 }
-
+/*
 @media (max-width: 1200px) {
    .content {
     display: grid;
@@ -295,7 +293,8 @@ body {
     grid-gap: (21/$rf)*1rem;
     }     
     
-}
+}*/
+
 @media (max-width: 767px) {
     body.lock {
         overflow: hidden;
@@ -435,4 +434,10 @@ body {
         flex-direction: column;
 
     }
+    .teachers{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
 }

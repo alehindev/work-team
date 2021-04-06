@@ -7,66 +7,66 @@
 }
 */
 html {
-  font-size: 16px;
+  font-size: 12px;
 }
 
-@media (max-width: 360px) {
-  html {
-    font-size: 9px;
-  }
-}
-
-@media (max-width: 450px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 600px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 767px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 1023px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1200px) {
+@media screen and (min-width: 1px) and (max-width: 359px) {
   html {
     font-size: 12px;
   }
 }
 
-@media (max-width: 1400px) {
+@media screen and (min-width: 360px) and (max-width: 450px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 599px) {
   html {
     font-size: 14px;
   }
 }
 
-@media (max-width: 1600px) {
+@media screen and (min-width: 600px) and (max-width: 767px) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
-@media (max-width: 1920px) {
+@media screen and (min-width: 768px) and (max-width: 1040px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1300px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1400px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1921px) {
   html {
     font-size: 17px;
   }
 }
 
-@media (max-width: 2560px) {
+@media screen and (min-width: 1922px) and (max-width: 2560px) {
   html {
-    font-size: 19px;
+    font-size: 21px;
   }
 }
 
@@ -199,10 +199,13 @@ body {
 }
 
 .content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .content-name__title {
@@ -216,13 +219,15 @@ body {
 }
 
 .teachers {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 1.16667rem;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .teacher-profile {
@@ -237,10 +242,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /*max-width: 656/$rf * 1rem;
-    max-height: 450/$rf *1rem;*/
-  min-width: 36.44444rem;
-  min-height: 25rem;
+  margin-bottom: 1.16667rem;
+  margin-left: 1.16667rem;
+  width: 36.44444rem;
+  height: 25rem;
 }
 
 .teacher-profile__title {
@@ -310,6 +315,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 3.05556rem;
 }
 
@@ -330,6 +337,7 @@ body {
   border-radius: 2.22222rem;
   color: #6B95FF;
   background-color: transparent;
+  margin-bottom: 0.83333rem;
 }
 
 .buttons-container__button:hover {
@@ -359,18 +367,16 @@ body {
   margin: 0;
 }
 
+/*
 @media (max-width: 1200px) {
-  .content {
-    display: -ms-grid;
+   .content {
     display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    grid-gap: 1.16667rem;
-  }
-}
-
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: (21/$rf)*1rem;
+    }     
+    
+}*/
 @media (max-width: 767px) {
   body.lock {
     overflow: hidden;
@@ -515,6 +521,17 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .teachers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
