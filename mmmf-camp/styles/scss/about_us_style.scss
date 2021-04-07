@@ -35,9 +35,11 @@ html {
     }
     @media screen and (min-width: 1401px) and (max-width: 1600px) {
         font-size: 14px;
+
     }
     @media screen and (min-width: 1601px) and (max-width: 1921px)  {
         font-size: 17px;
+
     }
     @media screen and (min-width: 1922px) and (max-width: 2560px) {
         font-size: 21px;
@@ -162,55 +164,56 @@ body {
 
 
 .teachers{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20/$rf*1rem;
 }
-
-.teacher-profile{
+.teacher-profile {
     position: relative;
+    padding: 40/$rf*1rem 20/$rf*1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 21/$rf*1rem;
-    margin-left: 21/$rf*1rem;
-    width: 656/$rf * 1rem;
-    height: 450/$rf *1rem;
-    &__title{
-        position: relative;
-        margin-left: 33/$rf * 1rem; 
-        margin-top:  83/$rf * 1rem;
-        font-size: 30/$rf *1rem;
-        font-weight: 700;
-        line-height: 37/$rf *1rem;
-    }
-    &__img{
-        position: absolute;
-        /*background: url("../../img/index__png/deti.png");
-        background-repeat: no-repeat;
-        background-size: cover;*/
-        border-radius: 50%;
-        width: 265/$rf * 1rem;
-        height: 265/$rf * 1rem;
-        top:  31/$rf * 1rem;
-        right: 36/$rf *1rem;
-    }
-    &__subtitle{
-        position: relative;
-        max-width: 656/$rf * 1rem;
-        margin-left: 33/$rf * 1rem;
-        margin-bottom: 30/$rf*1rem;
+
+    
+    &__subtitle {
+        padding: 0rem;
+        margin: 0rem;
+        margin-top: 10/$rf*1rem;
         font-weight: 500;
         font-size: 18/$rf *1rem;
         line-height: 22/$rf *1rem;
         overflow-wrap: break-word;
     }
-    
 }
+.teacher-bio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+		&__name {
+            font-size: 30/$rf *1rem;
+            font-weight: 700;
+            line-height: 37/$rf *1rem;
+		}
+}
+.teacher-logo {
+    z-index: 5;
+    width: 256/$rf*1rem;
+    height: 256/$rf*1rem;
+    border-radius: 50%;
+}
+
+
+
 
 .teacher-profile::before{
     content: "";
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: rgb(153,182,255);
@@ -435,9 +438,16 @@ body {
 
     }
     .teachers{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20/$rf*1rem;  
     }
+    .teacher-logo {
+        z-index: 5;
+        width: 150/$rf*1rem;
+        height: 150/$rf*1rem;
     
+    }
+
+
 }
