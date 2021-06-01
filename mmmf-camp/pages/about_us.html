@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/css/about_us_style.css">
+    <link rel="stylesheet" href="./styles/css/navbar.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Выездные школы МММФ</title>
@@ -61,87 +62,67 @@
                 <div class="our-teachers">
                     <h2 class="our-teachers__title">наши преподаватели</h2>
                     <div class="buttons-container">
-                        <button class="buttons-container__button button_clicked" id="btn-1">
-                            <p class="button-text">Руководители смен</p>
+                        <button class="buttons-container__button" id="btn-1" data-filter="leadears">
+                            Руководители смен
                         </button>
-                        <button class="buttons-container__button" id="btn-2">
-                            <p class="button-text">Преподаватели математики</p>
+                        <button class="buttons-container__button" id="btn-2" data-filter="math-teachers">
+                            Преподаватели математики
                         </button>
-                        <button class="buttons-container__button" id="btn-3">
-                            <p class="button-text">Преподаватели физики</p>
+                        <button class="buttons-container__button" id="btn-3" data-filter="pysh-teachers">
+                            Преподаватели физики
                         </button>
-                        <button class="buttons-container__button" id="btn-4">
-                            <p class="button-text">Преподаватели химии</p>
+                        <button class="buttons-container__button" id="btn-4" data-filter="chemistry-teachers">
+                            Преподаватели химии
                         </button>
                     </div>
                     <div class="teachers">
-                        <div class="teacher-profile"> 
+
+                        <div class="teacher-profile" data-category="chemistry-teachers">
                             <div class="teacher-bio">
-                                <h3 class="teacher-bio__name"></h3>
+                                <h3 class="teacher-bio__name">русский язык</h3>
                                 <div class="teacher-logo">
+                                    <img src="./../img/about_us_jpg/tutor1.jpg" alt="12312" class="teacher-logo__img">
                                 </div>
                             </div>
-                            <p class="teacher-profile__subtitle">|||</p>
+                            <p class="teacher-profile__subtitle">великий</p>
+                        </div>
+                        <div class="teacher-profile" data-category="leadears">
+                            <div class="teacher-bio">
+                                <h3 class="teacher-bio__name">русский язык</h3>
+                                <div class="teacher-logo">
+                                    <img src="./../img/about_us_jpg/tutor1.jpg" alt="12312" class="teacher-logo__img">
+                                </div>
+                            </div>
+                            <p class="teacher-profile__subtitle">великий</p>
+                        </div>
+                        <div class="teacher-profile" data-category="pysh-teachers">
+                            <div class="teacher-bio">
+                                <h3 class="teacher-bio__name">русский язык</h3>
+                                <div class="teacher-logo">
+                                    <img src="./../img/about_us_jpg/tutor1.jpg" alt="12312" class="teacher-logo__img">
+                                </div>
+                            </div>
+                            <p class="teacher-profile__subtitle">великий</p>
+                        </div>
+                        <div class="teacher-profile" data-category="leadears">
+                            <div class="teacher-bio">
+                                <h3 class="teacher-bio__name">русский язык</h3>
+                                <div class="teacher-logo">
+                                    <img src="./../img/about_us_jpg/tutor1.jpg" alt="12312" class="teacher-logo__img">
+                                </div>
+                            </div>
+                            <p class="teacher-profile__subtitle">великий</p>
+                        </div>
+                        <div class="teacher-profile" data-category="leadears">
+                            <div class="teacher-bio">
+                                <h3 class="teacher-bio__name">русский язык</h3>
+                                <div class="teacher-logo">
+                                    <img src="./../img/about_us_jpg/tutor1.jpg" alt="12312" class="teacher-logo__img">
+                                </div>
+                            </div>
+                            <p class="teacher-profile__subtitle">великий</p>
                         </div>
 
-
-                        <!--<div class="teacher-profile">
-                        <h3 class="teacher-profile__title">
-                            Коробицын<br>Дмитрий<br>Александрович
-                        </h3>
-                        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor1.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
-                        <p class="teacher-profile__subtitle">
-                            Руководитель выездных школ МММФ<br><br>
-                            Преподаватель Центра педагогического мастерства г. Москвы.
-                        </p>
-                    </div>
-                    <div class="teacher-profile">
-                        <h3 class="teacher-profile__title">
-                            Засыпкина<br>Ирина<br>Сергеевна
-                        </h3>
-                        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor2.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
-                        <p class="teacher-profile__subtitle">
-                            Руководитель программ для начальной школы<br><br>Автор олимпиадной онлайн Школы «Math tiger MSU
-                        </p>
-                    </div>
-                    <div class="teacher-profile">
-                        <h3 class="teacher-profile__title">
-                            Носков<br>Михаил<br>Сергеевич
-                        </h3>
-                        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor3.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
-                        <p class="teacher-profile__subtitle">
-                            Руководитель лингвистических смен<br><br>Руководитель курсов по школьной математике
-                        </p>
-                    </div>
-                    <div class="teacher-profile">
-                        <h3 class="teacher-profile__title">
-                            Захаров<br>Роман<br>Викторович
-                        </h3>
-                        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor4.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
-                        <p class="teacher-profile__subtitle">
-                            Руководитель физических смен<br><br>Золотой медалист Международной олимпиады по физике в составе сборной России<br><br>Преподаватель физики Школы № 1329 г. Москвы
-                        </p>
-                    </div>
-                    <div class="teacher-profile">
-                        <h3 class="teacher-profile__title">
-                            Шестаков<br>Иван<br>Валерьевич
-                        </h3>
-                        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor5.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
-                        <p class="teacher-profile__subtitle">
-                            Выпускник химфака МГУ<br><br>
-                            Преподаватель химии Центра педагогического мастерства г.Москвы
-                        </p>
-                    </div>
-                    <div class="teacher-profile">
-                        <h3 class="teacher-profile__title">
-                            Кульгин<br>Юрий<br>Владимирович
-                        </h3>
-                        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor6.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
-                        <p class="teacher-profile__subtitle">
-                            Выпускник ФМ-класса Школы № 1329<br><br>
-                            Администратор по связям с общественностью
-                        </p>
-                </div>-->
                     </div>
                 </div>
             </section>
@@ -150,6 +131,7 @@
 </body>
 
 <script src="./../js/about_us.js"></script>
+<script src="./../js/catalog.js"></script>
 
 </html>
 

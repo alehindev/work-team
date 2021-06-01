@@ -1,4 +1,4 @@
-var tutorsProfileTemplate = '<div class="teacher-profile">' + '<div class="teacher-bio">' + '<h3 class="teacher-bio__name">|</h3><div div class="teacher-logo" style = "background: url(\'./../img/about_us_jpg/||\'); background-repeat: no-repeat; background-size: cover; background-position: center;" ></div>' + '</div >' + '<p class="teacher-profile__subtitle">|||</p></div >';
+var tutorsProfileTemplate = '<div class="teacher-profile">' + '<div class="teacher-bio">' + '<h3 class="teacher-bio__name">|</h3><div div class="teacher-logo" style = "background: url(\'./../wp-content/themes/mmmf-camp/assets/img/about_us_jpg/||\' ); background-repeat: no-repeat; background-size: cover; background-position: center;" ></div>' + '</div >' + '<p class="teacher-profile__subtitle">|||</p></div >';
 var tutorsNames = ["Коробицын Дмитрий Александрович",
     "Засыпкина Ирина Сергеевна",
     "Носков Михаил Сергеевич",
@@ -89,7 +89,7 @@ var tutorsAbout = ["Руководитель выездных школ МММФ|
     "Старший преподаватель кафедры физики СУНЦ НГУ|Руководитель команд Новосибирска на Всероссийских и международных олимпиадах по физике|Член жюри IEPHO",
     "Преподаватель-методист по химии, учитель высшей категории|Преподаватель химии в Российско-Британской школе «Алгоритм»"];
 
-
+/*
 ShowHeadTutors();
 
 $("#btn-1").click(function () {
@@ -162,6 +162,7 @@ function ShowChemTutors() {
     var newTmp = tutorsProfileTemplate.replace("|", tutorsNames[43].replaceAll(" ", "<br>")).replace("||", "tutor" + 44 + ".jpg").replace("|||", tutorsAbout[43].replaceAll("|", "<br><br>"));
     $(".teachers").append(newTmp);
 }
+*/
 //alert(elementChildrens.length);
 $(document).ready(function () {
     $('.header__burger').click(function (event) {

@@ -119,7 +119,13 @@ body {
 .navbar {
     display: flex;
     flex-direction: column;
-		&__link {
+    text-decoration: none;
+    margin: 0rem;
+    padding: 0rem;
+    list-style-type: none;
+		li {
+            margin: 0rem;
+            padding: 0rem;
             text-decoration: none;
             color: black;
             font-size: 1rem;
@@ -128,7 +134,7 @@ body {
             outline: none;
             position: relative;
 		}
-        &__link:hover:before {
+        li:hover:before {
             content: '';
             position: absolute;
             left: -35%;
@@ -137,10 +143,9 @@ body {
             height: 3px;
             background-color: #6B95FF;
 		}
-        
-        
-        &__link-clicked {
-            color: #6B95FF;
+        a {
+            text-decoration: none;
+            color: black;
         }
 }
 .content {
@@ -469,6 +474,180 @@ body {
 
 }
 */
+.signin-sec{
+    background: rgba(0,0,0,.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.signin-sec.notactive{
+    display: none;
+
+}
+.signin {
+    position: relative;
+    width: 50%;
+    max-width:  600/$rf*1rem;
+    border-radius: 15/$rf*1rem;
+    border-color: transparent;
+    background: white;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30/$rf*1rem;
+    &__title {
+         font-family: Montserrat;
+            font-size: 36/$rf*1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 23/$rf*1rem;
+            letter-spacing: 0rem;
+            text-align: left;    
+            margin: 20/$rf*1rem 0rem;
+        }
+
+		&__subtitle {
+            font-family: Montserrat;
+            font-size: 24/$rf*1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23/$rf*1rem;
+            letter-spacing: 0rem;
+            text-align: left;    
+            margin-top: 0/$rf*1rem;
+            margin-bottom: 20/$rf*1rem;
+		}
+
+}
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15/$rf*1rem;
+		&__input {
+
+            width: 100%;
+            outline: none;
+            border-width: 1px;
+
+            border-color:transparent;
+            border-bottom-color: black;
+            font-family: Montserrat;
+            font-size: 32/$rf*1rem;
+            font-style: normal;
+            font-weight: 500;
+            text-align: left;    
+            margin: 0rem;   
+            background-color: transparent;
+            margin: 20/$rf*1rem 0rem;
+            padding-left: 10/$rf*1rem;
+		}
+
+		&__btn {
+            transition: all 0.2s ease;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            height: auto;
+            width: auto;
+            padding-left: 33/$rf *1rem;
+            padding-right: 33/$rf *1rem;
+            padding-top: 19/$rf *1rem;
+            padding-bottom: 19/$rf *1rem;
+            border: 3/$rf *1rem solid #6B95FF;
+            border-radius: 40/$rf *1rem;
+            background-color: #6B95FF;
+            color: #fff;
+
+            font-family: Montserrat;
+            font-size: 18/$rf * 1rem;
+            line-height: 22/$rf *1rem;
+            font-weight: 700;
+            margin-top: 20/$rf*1rem;
+		}
+        &__btn:hover{
+            color: #6B95FF;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+}
+.signin-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.signin {
+
+        &__burger {
+            margin-top: 20/$rf*1rem;
+            margin-right: 40/$rf*1rem;
+            display: block;
+            position: relative;
+            width: 38px;
+            height: 26px;
+            z-index: 102;
+
+        }
+		&__burger span{
+
+            position: absolute;
+            left: 0;
+            top: 11.34px;
+            width: 38px;
+            height: 4px;
+            background-color: #6B95FF;
+            transition: all 0.2s ease 0s;
+		}
+        &__burger::before{
+
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 38px;
+            height: 4px;
+            background-color: #6B95FF;
+            transition: all 0.2s ease 0s;
+        }
+        &__burger::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 38px;
+            height: 4px;
+            background-color: #6B95FF;
+            transition: all 0.2s ease 0s;
+        }
+        &__burger span{
+            transform: scale(0);
+            
+        }
+        &__burger::before{
+            transform: rotate(45deg);
+            top: 11px;
+           
+        }
+        &__burger::after{
+            transform: rotate(-45deg);
+            bottom: 11px;
+            
+        }
+}
+body.lock {
+    overflow: hidden;
+}
 @media (max-width: 767px) {
     body.lock {
         overflow: hidden;

@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./../styles/css/traveling-schools.css">
+    <link rel="stylesheet" href="./styles/css/navbar.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Выездные школы МММФ</title>
 </head>
@@ -69,7 +70,7 @@
                         </p>
                     </button>
                 </nav>
-                <article class="traveling-schools">
+                <article class="article traveling-schools">
                     <h2 class="traveling-schools__title">
                         Выездные школы
                     </h2>
@@ -83,117 +84,782 @@
                         психология.
                     </p>
                 </article>
-                <article class="winter-school">
-                    <h2 class="winter-school__title">
+                <article class="article winter-school">
+                    <h2 class="article__title">
                         ЗИМНЯЯ ШКОЛА
                     </h2>
-                    <nav class="article-nav-wsh">
-                        <button class="article-nav-btn article-nav-btn__clicked" id="etnomir">
-                            <p class="article-nav-btn__text">
-                                Интенсив в Этномире
-                            </p>
-                        </button>
-                        <button class="article-nav-btn" id="math-department">
-                            <p class="article-nav-btn__text">
-                                Математическое отделение
-                            </p>
-                        </button>
-                        <button class="article-nav-btn" id="list-participants">
-                            <p class="article-nav-btn__text">
-                                Списки зачисленных
-                            </p>
-                        </button>
-                        <button class="article-nav-btn" id="first-new-year">
-                            <p class="article-nav-btn__text">
-                                Первая дополнительная <br>
-                                новогодняя онлайн-смена
-                            </p>
-                        </button>
-                        <button class="article-nav-btn" id="second-new-year">
-                            <p class="article-nav-btn__text">
-                                Вторая дополнительная <br>
-                                новогодняя онлайн-смена
-                            </p>
-                        </button>
-                    </nav>
-                    <div class="etnomir">
-                        <div class="etnomir-light">
-                            <p class="etnomir__text etnomir-light-text">
-                                <strong>Заезд в лагерь 3 января с 9:00 до 12:00<br>
-                                    Отъезд 10 января в первой половине дня
-                                </strong>
-                                <br><br>
-                                Можно приехать самостоятельно или воспользоваться групповым трансфером. Если нужен
-                                групповой трансфер, то об этом
-                                заранее нужно сообщить на почту <strong>mmmf.camp@gmail.com.</strong>
-                                <br><br>
-                                <strong>
-                                    Групповой трансфер оплачивается дополнительно: 500 руб. в одну сторону, 800 руб. — в
-                                    обе стороны.
-                                </strong>
-                                <br><br>
-                                <strong>В связи с текущими требованиями для проведения лагерей во время смены посещение
-                                    детей родителями, а также выход детей за
-                                    территорию лагеря невозможны.</strong>
-                            </p>
-                            <button class="form-btn">
-                                <p class="form-btn__text">
-                                    Регистрация
-                                </p>
-                            </button>
-                            <div class="warning">
-                                <p class="warning__text">
-                                    Обращаем внимание, что во время смены запрещены электронные
-                                    игры в любом виде, в т.ч. на телефонах.</p>
+                    <div class="boxfilter">
+                        <nav class="boxfilter-nav">
+                            <a class="boxfilter__link clicked" datafilter="matematicheskoe-otdelenie">
+                                Математическая смена
+                            </a>
+                        </nav>
+                        <div class="filtered-items">
+                            <div class="filtered-item" datacategory="matematicheskoe-otdelenie">
+                                <div class="etnomir">
+                                    <div class="etnomir-light">
+                                        <p class="etnomir__text etnomir-light-text">
+                                            <strong>Заезд в лагерь 3 января с 9:00 до 12:00<br>
+                                                Отъезд 10 января в первой половине дня
+                                            </strong>
+                                            <br><br>
+                                            Можно приехать самостоятельно или воспользоваться групповым трансфером. Если
+                                            нужен
+                                            групповой трансфер, то об этом
+                                            заранее нужно сообщить на почту <strong>mmmf.camp@gmail.com.</strong>
+                                            <br><br>
+                                            <strong>
+                                                Групповой трансфер оплачивается дополнительно: 500 руб. в одну сторону,
+                                                800 руб. — в
+                                                обе стороны.
+                                            </strong>
+                                            <br><br>
+                                            <strong>В связи с текущими требованиями для проведения лагерей во время
+                                                смены посещение
+                                                детей родителями, а также выход детей за
+                                                территорию лагеря невозможны.</strong>
+                                        </p>
+                                        <button class="form-btn">
+                                            <a href="https://docs.google.com/forms/d/1BxGq15ZTR80pn5lAx6NHghqT6EzaQadqMoUEjYUH3n4/viewform?edit_requested=true"
+                                                class="form-btn__text">
+                                                Регистрация
+                                            </a>
+                                        </button>
+                                        <div class="warning">
+                                            <p class="warning__text">
+                                                Обращаем внимание, что во время смены запрещены электронные
+                                                игры в любом виде, в т.ч. на телефонах.</p>
+                                        </div>
+                                    </div>
+                                    <div class="etnomir-lists">
+                                        <div class="etnomir-list">
+                                            <h4 class="etnomir-list__title">
+                                                Список необходимых вещей:
+                                            </h4>
+                                            <p class="etnomir-list__text">
+                                                — 2-3 тетради 48 листов, несколько ручек и карандашей для занятий;<br>
+                                                — сменная одежда и бельё;<br>
+                                                — предметы личной гигиены (зуб. щётка, паста и т.д.)<br>
+                                                — банные принадлежности (полотенце, мыло, шампунь и т.д.)<br>
+                                                — одежда и обувь для занятия спортом;<br>
+                                                — принадлежности для бассейна (плавки/купальник, шапочка, шлёпки).<br>
+                                            </p>
+                                        </div>
+                                        <div class="etnomir-list">
+                                            <h4 class="etnomir-list__title">
+                                                С собой необходимо взять следующие документы:
+                                            </h4>
+                                            <p class="etnomir-list__text">
+                                                1. Медицинская справка 079у с отметками о перенесённых заболеваниях и
+                                                прививках<br>
+                                                2. Справка об отсутствии контактов с инфекционными больными с пометкой
+                                                об отсутствии
+                                                контактов с больными covid-19,
+                                                полученная не ранее 29 декабря<br>
+                                                3. Справка для бассейна 083/4-89<br>
+                                                4. Копия свидетельства о рождении (если есть 14 лет, то копия
+                                                паспорта)<br>
+                                                5. Копия медицинского полиса<br>
+                                                6. Согласие на оказание мед. помощи (желательно)<br>
+                                                7. Заполненная доверенность на ребёнка: оригинал нужно взять с собой в
+                                                лагерь, фото
+                                                или
+                                                скан выслать до начала смены на
+                                                адрес <b>mmmf.camp@gmail.com</b><br>
+                                                (Доверенность скачать)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filtered-item" datacategory="requiredthings">
+
                             </div>
                         </div>
-                        <div class="etnomir-lists">
-                            <div class="etnomir-list">
-                                <h4 class="etnomir-list__title">
-                                    Список необходимых вещей:
-                                </h4>
-                                <p class="etnomir-list__text">
-                                    — 2-3 тетради 48 листов, несколько ручек и карандашей для занятий;<br>
-                                    — сменная одежда и бельё;<br>
-                                    — предметы личной гигиены (зуб. щётка, паста и т.д.)<br>
-                                    — банные принадлежности (полотенце, мыло, шампунь и т.д.)<br>
-                                    — одежда и обувь для занятия спортом;<br>
-                                    — принадлежности для бассейна (плавки/купальник, шапочка, шлёпки).<br>
-                                </p>
-                            </div>
-                            <div class="etnomir-list">
-                                <h4 class="etnomir-list__title">
-                                    С собой необходимо взять следующие документы:
-                                </h4>
-                                <p class="etnomir-list__text">
-                                    1. Медицинская справка 079у с отметками о перенесённых заболеваниях и прививках<br>
-                                    2. Справка об отсутствии контактов с инфекционными больными с пометкой об отсутствии
-                                    контактов с больными covid-19,
-                                    полученная не ранее 29 декабря<br>
-                                    3. Справка для бассейна 083/4-89<br>
-                                    4. Копия свидетельства о рождении (если есть 14 лет, то копия паспорта)<br>
-                                    5. Копия медицинского полиса<br>
-                                    6. Согласие на оказание мед. помощи (желательно)<br>
-                                    7. Заполненная доверенность на ребёнка: оригинал нужно взять с собой в лагерь, фото
-                                    или
-                                    скан выслать до начала смены на
-                                    адрес <b>mmmf.camp@gmail.com</b><br>
-                                    (Доверенность скачать)
-                                </p>
-                            </div>
-                        </div>
-
-
                     </div>
-                </article>
-                <article class="summer-school">
 
                 </article>
-                <article class="spring-school">
+                <article class="article summer-school">
+                    <h2 class="article__title">
+                        Летняя школа
+                    </h2>
+                    <div class="boxfilter">
+                        <nav class="boxfilter-nav">
+                            <a class="boxfilter__link clicked" datafilter="valdai">
+                                Июньская школа<br>на Валдае
+                            </a>
+                            <a class="boxfilter__link" datafilter="math03">
+                                Математические<br>смены 0-3 кл.
+                            </a>
+                            <a class="boxfilter__link" datafilter="math410">
+                                Математические<br>смены 4-10 кл.
+                            </a>
+                            <a class="boxfilter__link" datafilter="physics">
+                                Физические<br>смены
+                            </a>
+
+                        </nav>
+                        <div class="filtered-items">
+                            <div class="filtered-item" datacategory="valdai">
+                                <div class="etnomir">
+                                    <div class="etnomir-light">
+                                        <div class="etnomir__text etnomir-light-text">
+                                            <b>Школа пройдет с 30.05.21 по 11.06.21г</b>.<br><br><b>Мы приглашаем
+                                                учеников 1
+                                                — 8
+                                                классов принять участие
+                                                в Июньской школе МММФ
+                                                Математика на "Валдае".
+                                            </b><br><b> Место проведения –
+                                                Гостиничный комплекс
+                                                “Валдайские зори”</b>.<br><br>
+
+
+                                            <div class="price-list">
+                                                <h4 class="price-list__title">
+                                                    Стоимость:
+                                                </h4>
+                                                <div class="list">
+                                                    <div class="list-column list-column-gray">
+                                                        <div class="price-description">
+                                                            <h4 class="price-description__title">Ребенок с обучением
+                                                            </h4>
+
+
+
+                                                        </div>
+                                                        <div class="list-column__white-line"></div>
+                                                        <div class="cost">
+                                                            <h4 class="cost__title">
+                                                                48 500 ₽
+                                                            </h4>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-column list-column-white">
+                                                        <div class="price-description">
+                                                            <h4 class="price-description__title">Взрослый</h4>
+
+
+                                                        </div>
+                                                        <div class="list-column__gray-line"></div>
+                                                        <div class="cost">
+                                                            <h4 class="cost__title">
+                                                                36 500 ₽
+                                                            </h4>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <br><br>
+
+                                            Стоимость включает в себя проживание, питание, обучение и
+                                            культурно-развлекательную программу для
+                                            детей.
+                                            <br>
+                                            <br>
+                                            <strong>Возникающие вопросы можно задавать: по электронной почте
+                                                mmmf.courses@gmail.com.</strong>
+                                            <br><br>
+
+                                            <br><br>
+                                            </p>
+                                            <button class="form-btn">
+                                                <a class="form-btn__text"
+                                                    href="https://docs.google.com/forms/d/1lYyfWmAzClQiRfoywCd-3scfoWnX-nbWTtXyZ9Ebj9A/viewform?edit_requested=true">
+                                                    Регистрация
+                                                </a>
+                                            </button>
+                                            <div class="warning">
+                                                <p class="warning__text">
+                                                    Обращаем внимание, что во время смены запрещены электронные
+                                                    игры в любом виде, в т.ч. на телефонах.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="etnomir-lists">
+                                        <div class="etnomir-list">
+                                            <h4 class="etnomir-list__title">
+                                                Список необходимых вещей:
+                                            </h4>
+                                            <p class="etnomir-list__text">
+                                                — 2-3 тетради 48 листов, несколько ручек и карандашей для занятий;<br>
+                                                — сменная одежда и бельё;<br>
+                                                — предметы личной гигиены (зуб. щётка, паста и т.д.)<br>
+                                                — банные принадлежности (полотенце, мыло, шампунь и т.д.)<br>
+                                                — одежда и обувь для занятия спортом;<br>
+                                                — принадлежности для бассейна (плавки/купальник, шапочка, шлёпки).<br>
+                                            </p>
+                                        </div>
+                                        <div class="etnomir-list">
+                                            <h4 class="etnomir-list__title">
+                                                С собой необходимо взять следующие документы:
+                                            </h4>
+                                            <p class="etnomir-list__text">
+                                                1. Медицинская справка 079у с отметками о перенесённых заболеваниях и
+                                                прививках<br>
+                                                2. Справка об отсутствии контактов с инфекционными больными с пометкой
+                                                об отсутствии
+                                                контактов с больными covid-19,
+                                                полученная не ранее 29 декабря<br>
+                                                3. Справка для бассейна 083/4-89<br>
+                                                4. Копия свидетельства о рождении (если есть 14 лет, то копия
+                                                паспорта)<br>
+                                                5. Копия медицинского полиса<br>
+                                                6. Согласие на оказание мед. помощи (желательно)<br>
+                                                7. Заполненная доверенность на ребёнка: оригинал нужно взять с собой в
+                                                лагерь, фото
+                                                или
+                                                скан выслать до начала смены на
+                                                адрес <b>mmmf.camp@gmail.com</b><br>
+                                                (Доверенность скачать)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filtered-item" datacategory="math03">
+                                <div class="etnomir">
+                                    <div class="etnomir-light">
+                                        <div class="etnomir__text etnomir-light-text">
+                                            <b>Летний лагерь олимпиадной математики 2021 для дошкольников и школьников
+                                                1-3 класса планируется в Болгарии, в г.Обзор</b>
+                                            <br>
+                                            <br>
+                                            <b>I смена</b> — <b>с 4 июня по 13 июня 2021 года</b> <br>(для учащихся 0-8
+                                            классов в Турции) <br><br>
+                                            <b>II смена</b> — <b>с 14 июня по 28 июня 2021 года</b><br><br>
+
+                                            <b>III — VI смены будут объявлены позднее</b>
+                                            <br>
+                                            <br>
+                                            <b>Для детей без родителей будут организованы смены в Подмосковье.</b>
+
+                                            <br><br><br>
+                                            <div class="price-list">
+                                                <h4 class="price-list__title">
+                                                    Стоимость:
+                                                </h4>
+                                                <div class="list">
+                                                    <div class="list-column list-column-gray">
+                                                        <div class="price-description">
+                                                            <h4 class="price-description__title">2-х местное размещение
+                                                                (учащийся + сопровождающий)
+                                                            </h4>
+
+
+
+                                                        </div>
+                                                        <div class="list-column__white-line"></div>
+                                                        <div class="cost">
+                                                            <h4 class="cost__title">
+                                                                от 1200 €<br> до 1600 €
+                                                            </h4>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-column list-column-white">
+                                                        <div class="price-description">
+                                                            <h4 class="price-description__title">3-х местное размещение
+                                                                (учащийся + сопровождающие)</h4>
+
+
+                                                        </div>
+                                                        <div class="list-column__gray-line"></div>
+                                                        <div class="cost">
+                                                            <h4 class="cost__title">
+                                                                от 1600 €<br> до 2200 €
+                                                            </h4>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-column list-column-gray">
+                                                        <div class="price-description">
+                                                            <h4 class="price-description__title">3-х местное размещение
+                                                                (учащиеся + сопровождающий)
+                                                            </h4>
+
+
+
+                                                        </div>
+                                                        <div class="list-column__white-line"></div>
+                                                        <div class="cost">
+                                                            <h4 class="cost__title">
+                                                                от 1700 €<br> до 2300 €
+                                                            </h4>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <strong>Возникающие вопросы можно задавать: по электронной почте
+                                                mmmf.courses@gmail.com.</strong>
+                                            <br><br>
+
+                                            <br><br>
+                                            </p>
+                                            <button class="form-btn">
+                                                <a class="form-btn__text"
+                                                    href="https://docs.google.com/forms/d/e/1FAIpQLSdfxALlHkSGuTyZSvRS4UXhHmJcddatDEOKhv9Gs0y0gn73ig/viewform">
+                                                    Регистрация
+                                                </a>
+                                            </button>
+                                            <div class="warning">
+                                                <p class="warning__text">
+                                                    В случае, если авиасообщение между Россией и Болгарией не будет
+                                                    открыто до 01.06.2021г., II-VI смены летней олимпиадной
+                                                    школы 2021 будут проведены в Турции (Анталия).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="etnomir-lists">
+                                        <div class="etnomir-list">
+                                            <h4 class="etnomir-list__title">
+                                                Список необходимых вещей:
+                                            </h4>
+                                            <p class="etnomir-list__text">
+                                                — 2-3 тетради 48 листов, несколько ручек и карандашей для занятий;<br>
+                                                — сменная одежда и бельё;<br>
+                                                — предметы личной гигиены (зуб. щётка, паста и т.д.)<br>
+                                                — банные принадлежности (полотенце, мыло, шампунь и т.д.)<br>
+                                                — одежда и обувь для занятия спортом;<br>
+                                                — принадлежности для бассейна (плавки/купальник, шапочка, шлёпки).<br>
+                                            </p>
+                                        </div>
+                                        <div class="etnomir-list">
+                                            <h4 class="etnomir-list__title">
+                                                Кратко о локации лагеря
+                                            </h4>
+                                            <p class="etnomir-list__text">
+                                                Смены летнего лагеря проходят в учебном центре в г. Обзор, области
+                                                Бургас в Болгарии.
+                                                <br><br>
+                                                Ближайшие аэропорты Бургас и Варна находятся в 65 км от города. Дорога
+                                                до лагеря занимает примерно один час.
+                                                <br><br>
+                                                Обзор — небольшой, но очень привлекательный курорт, живописный и
+                                                очаровательный с великолепными парками и фонтанами,
+                                                кафе, ресторанами, дискотеками, аптеками, магазинами, салонами красоты и
+                                                спа-центрами.
+                                                <br><br>
+                                                Город Обзор славится своим 8-километровым пляжем и полезным для здоровья
+                                                климатом, сформировавшимся благодаря
+                                                уникальному сочетанию морского и горного воздуха.
+                                                <br><br>
+                                                Песчаный пляж находится в 10/20-ти минутах ходьбы от наших
+                                                апартаментов/лагеря.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filtered-item" datacategory="math410">
+                                <div class="etnomir">
+                                    <div class="etnomir-light">
+                                        <div class="etnomir__text etnomir-light-text">
+                                            <b>Математические смены 4-10 кл. пройдут на Черноморском побережье Болгарии
+                                                – на базе Учебного центра «Обзор» (пос. Обзор)</b>
+                                            <br>
+                                            <br>
+                                            <b>Даты смен:</b><br><br>
+                                            <b>7-10 кл.:</b> — <b>с 2 июля по 23 июля 2021 года</b><br><br>
+                                            <b>4-6 кл.:</b> — <b>с 23 июля по 13 августа 2021 года</b><br><br>
+
+
+                                            <br>
+                                            <div class="price-list">
+                                                <h4 class="price-list__title">
+                                                    Стоимость:
+                                                </h4>
+                                                <div class="list">
+                                                    <div class="list-column list-column-gray">
+                                                        <div class="price-description">
+                                                            <h4 class="price-description__title">Призёры закл. этапа
+                                                                Всероссийской олимпиады <br>
+                                                                Призёры закл. этапа олимпиады им. Эйлера
+                                                            </h4>
+
+
+
+                                                        </div>
+                                                        <div class="list-column__white-line"></div>
+                                                        <div class="cost">
+                                                            <h4 class="cost__title">
+                                                                400 €
+                                                            </h4>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-column list-column-white">
+                                                        <div class="price-description">
+                                                            <h4 class="price-description__title">Призёры Московской
+                                                                математической олимпиады<br>
+                                                                Призёры Математического праздника
+                                                            </h4>
+
+
+                                                        </div>
+                                                        <div class="list-column__gray-line"></div>
+                                                        <div class="cost">
+                                                            <h4 class="cost__title">
+                                                                550 €
+                                                            </h4>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-column list-column-gray">
+                                                        <div class="price-description">
+                                                            <h4 class="price-description__title">Призёры регионального
+                                                                этапа Всероссийкой олимпиады по математике<br>
+                                                                Призёры регионального этапа олимпиады им. Эйлера
+                                                            </h4>
+
+
+
+                                                        </div>
+                                                        <div class="list-column__white-line"></div>
+                                                        <div class="cost">
+                                                            <h4 class="cost__title">
+                                                                550 €
+                                                            </h4>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-column list-column-white">
+                                                        <div class="price-description">
+                                                            <h4 class="price-description__title">Все остальные
+                                                            </h4>
+
+
+                                                        </div>
+                                                        <div class="list-column__gray-line"></div>
+                                                        <div class="cost">
+                                                            <h4 class="cost__title">
+                                                                600 €
+                                                            </h4>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <strong>Возникающие вопросы можно задавать: по электронной почте
+                                                mmmf.courses@gmail.com.</strong>
+                                            <br><br>
+
+                                            <br><br>
+                                            </p>
+                                            <button class="form-btn">
+                                                <a class="form-btn__text"
+                                                    href="https://docs.google.com/forms/d/1v__WOhOG_6kL8DMa6vfukGV3EMYGjUjPeafOIz43RLk/viewform?edit_requested=true">
+                                                    Регистрация
+                                                </a>
+                                            </button>
+                                            <div class="warning">
+                                                <p class="warning__text">
+                                                    В случае, если авиасообщение между Россией и Болгарией не будет
+                                                    открыто до 01.06.2021г., II-VI смены летней олимпиадной
+                                                    школы 2021 будут проведены в Турции (Анталия).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="etnomir-lists">
+                                        <div class="etnomir-list">
+                                            <h4 class="etnomir-list__title">
+                                                Правила зачисления:
+                                            </h4>
+                                            <p class="etnomir-list__text">
+                                                <b>Зачисление будет происходить по результатам собеседования.</b>
+                                                <br><br>
+                                                Без собеседования зачисляются:
+                                                — участники Летней школы 2019 года, показавшие высокие результаты по
+                                                итогам обучения<br>
+                                                — призёры регионального этапа Всероссийской олимпиады школьников по
+                                                математике, прошедшие на заключительный этап<br>
+                                                — призёры Московской математической олимпиады 2021 г. (награждённые
+                                                дипломом I, II или III степени)<br>
+                                                — призёров регионального этапа Олимпиады им. Л. Эйлера, прошедшие на
+                                                заключительный этап<br>
+                                                — призёры Математического праздника 2021 г. (награждённые дипломом I, II
+                                                или III степени)<br>
+                                                <br>
+                                                В некоторых случаях оргкомитет может освободить от собеседования и
+                                                других школьников, если считает, что в нём нет
+                                                необходимости.
+                                            </p>
+                                        </div>
+                                        <div class="etnomir-list">
+                                            <h4 class="etnomir-list__title">
+                                                Кратко о локации лагеря
+                                            </h4>
+                                            <p class="etnomir-list__text">
+                                                Смены летнего лагеря проходят в учебном центре в г. Обзор, области
+                                                Бургас в Болгарии.
+                                                <br><br>
+                                                Ближайшие аэропорты Бургас и Варна находятся в 65 км от города. Дорога
+                                                до лагеря занимает примерно один час.
+                                                <br><br>
+                                                Обзор — небольшой, но очень привлекательный курорт, живописный и
+                                                очаровательный с великолепными парками и фонтанами,
+                                                кафе, ресторанами, дискотеками, аптеками, магазинами, салонами красоты и
+                                                спа-центрами.
+                                                <br><br>
+                                                Город Обзор славится своим 8-километровым пляжем и полезным для здоровья
+                                                климатом, сформировавшимся благодаря
+                                                уникальному сочетанию морского и горного воздуха.
+                                                <br><br>
+                                                Песчаный пляж находится в 10/20-ти минутах ходьбы от наших
+                                                апартаментов/лагеря.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filtered-item" datacategory="physics">
+                                <div class="etnomir">
+                                    <div class="etnomir-light">
+                                        <div class="etnomir__text etnomir-light-text">
+                                            <b>Смены пройдут на Черноморском побережье Болгарии – на базе Учебного
+                                                центра «Обзор» (пос. Обзор).</b>
+                                            <br>
+                                            <br>
+                                            <b>Даты смен:</b><br><br>
+                                            <b>6 кл.:</b> — <b>с 2 июля по 23 июля 2021 года</b><br><br>
+                                            <b>7-10 кл.:</b> — <b>с 23 июля по 13 августа 2021 года</b><br><br>
+
+
+                                            <br>
+                                            <div class="price-list">
+                                                <h4 class="price-list__title">
+                                                    Стоимость:
+                                                </h4>
+                                                <div class="list">
+                                                    <div class="list-column list-column-gray">
+                                                        <div class="price-description">
+                                                            <h4 class="price-description__title">
+                                                                Ребенок с обучением
+                                                            </h4>
+
+
+
+                                                        </div>
+                                                        <div class="list-column__white-line"></div>
+                                                        <div class="cost">
+                                                            <h4 class="cost__title">
+                                                                650 €
+                                                            </h4>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <strong>Возникающие вопросы можно задавать: по электронной почте
+                                                mmmf.camp.plus@gmail.com.</strong>
+                                            <br><br>
+
+                                            <br><br>
+                                            </p>
+                                            <button class="form-btn">
+                                                <a class="form-btn__text"
+                                                    href="https://docs.google.com/forms/d/1eNahpNylRguuL3rG5qpJ4HR1wkgV2sJsEbdTIgIlbxw/viewform?edit_requested=true">
+                                                    Регистрация
+                                                </a>
+                                            </button>
+                                            <div class="warning">
+                                                <p class="warning__text">
+                                                    В случае большого
+                                                    количества заявок смены пройдут в Болгарии на базе отдыха «Мечта»
+                                                    (пос.
+                                                    Приморско).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="etnomir-lists">
+                                        <div class="etnomir-list">
+                                            <h4 class="etnomir-list__title">
+                                                Общая информация
+                                            </h4>
+                                            <p class="etnomir-list__text">
+                                                Школа даёт возможность совместить занятия физикой с отдыхом в летнем
+                                                лагере. Учебное время – 6 часов ежедневно
+                                                (кроме
+                                                двух выходных в течение смены) в первой половине дня. Занятия ведут
+                                                опытные преподаватели физмат школ, тренеры
+                                                сборной
+                                                Москвы по физике, а также студенты и аспиранты МФТИ и физфака МГУ, в
+                                                прошлом победители и призеры всероссийских
+                                                и
+                                                международных олимпиад. На занятиях изучаются темы и рассматриваются
+                                                классы задач, выходящие за рамки школьной
+                                                программы
+                                                по физике. Большое внимание уделяется решению нестандартных задач,
+                                                подготовке к олимпиадам по физике. Помимо
+                                                семинарских
+                                                занятий будет организован физический практикум, где дети, планируя
+                                                эксперимент, проводя и анализируя измерения,
+                                                смогут
+                                                закрепить полученные теоретические знания.
+                                                <br><br>
+                                                Численность учебных групп — 10-15 человек. Дети делятся на группы
+                                                разного уровня подготовки, уровень самых
+                                                сильных групп
+                                                довольно высок. Кроме обязательных занятий по физике предлагаются
+                                                дополнительные курсы по выбору.
+                                                <br><br>
+                                                Во второй половине дня купание в море, спортивные игры, развлекательные
+                                                мероприятия. В выходные дни экскурсии,
+                                                аквапарк.
+                                                <br><br>
+
+                                                Проживание в комнатах по 4-5 человек. Питание пятиразовое: завтрак,
+                                                обед, полдник, ужин, пятое питание перед
+                                                сном.
+                                            </p>
+                                        </div>
+                                        <div class="etnomir-list">
+                                            <h4 class="etnomir-list__title">
+                                                Кратко о локации лагеря
+                                            </h4>
+                                            <p class="etnomir-list__text">
+                                                Смены летнего лагеря проходят в учебном центре в г. Обзор, области
+                                                Бургас в Болгарии.
+                                                <br><br>
+                                                Ближайшие аэропорты Бургас и Варна находятся в 65 км от города. Дорога
+                                                до лагеря занимает примерно один час.
+                                                <br><br>
+                                                Обзор — небольшой, но очень привлекательный курорт, живописный и
+                                                очаровательный с великолепными парками и фонтанами,
+                                                кафе, ресторанами, дискотеками, аптеками, магазинами, салонами красоты и
+                                                спа-центрами.
+                                                <br><br>
+                                                Город Обзор славится своим 8-километровым пляжем и полезным для здоровья
+                                                климатом, сформировавшимся благодаря
+                                                уникальному сочетанию морского и горного воздуха.
+                                                <br><br>
+                                                Песчаный пляж находится в 10/20-ти минутах ходьбы от наших
+                                                апартаментов/лагеря.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </article>
+                <article class="article spring-school">
+                    <h2 class="article__title">
+                        Весенняя школа
+                    </h2>
+                    <div class="boxfilter">
+                        <nav class="boxfilter-nav">
+                            <a class="boxfilter__link clicked" datafilter="etnomir">
+                                Интенсив в Этномире
+                            </a>
+                        </nav>
+                        <div class="filtered-items">
+                            <div class="filtered-item" datacategory="etnomir">
+                                <div class="etnomir">
+                                    <div class="etnomir-light">
+                                        <p class="etnomir__text etnomir-light-text">
+                                            В тёплые праздники <b>с 1 по 9 мая</b> 2021 года <b>мы приглашаем учеников 1
+                                                — 7
+                                                классов принять участие в Олимпиадном
+                                                экстраматематическом интенсиве</b>.<br><b> Место проведения</b> –
+                                            этнографический
+                                            <b>парк-отель «Этномир»</b>.<br><br>
+
+                                            Проживание в отёле «Подворье» ( 5-7 минут от места проведения занятий), в
+                                            комнатах по 2-4 человека
+                                            4-х разовое питание включает в себя: завтрак, обед, полдник, ужин.<br><br>
+                                            <strong>Заезд в лагерь 1 мая с 9:00 до 12:00<br>
+                                                Отъезд 9 мая в первой половине дня
+                                            </strong>
+                                            <br><br>
+                                            Можно приехать самостоятельно или воспользоваться групповым трансфером. Если
+                                            нужен
+                                            групповой трансфер, то об этом
+                                            заранее нужно сообщить на почту <strong>mmmf.camp@gmail.com.</strong>
+                                            <br><br>
+                                            <strong>
+                                                Групповой трансфер оплачивается дополнительно: 500 руб. в одну сторону,
+                                                800 руб. — в
+                                                обе стороны.
+                                            </strong>
+                                            <br><br>
+                                        </p>
+                                        <button class="form-btn">
+                                            <a class="form-btn__text"
+                                                href="https://docs.google.com/forms/d/1hcqfkNfbne2AF5OYb_JietbKkHKMATcJ8oZF5n4xoG8/viewform?edit_requested=true">
+                                                Регистрация
+                                            </a>
+                                        </button>
+                                        <div class="warning">
+                                            <p class="warning__text">
+                                                Обращаем внимание, что во время смены запрещены электронные
+                                                игры в любом виде, в т.ч. на телефонах.</p>
+                                        </div>
+                                    </div>
+                                    <div class="etnomir-lists">
+                                        <div class="etnomir-list">
+                                            <h4 class="etnomir-list__title">
+                                                Список необходимых вещей:
+                                            </h4>
+                                            <p class="etnomir-list__text">
+                                                — 2-3 тетради 48 листов, несколько ручек и карандашей для занятий;<br>
+                                                — сменная одежда и бельё;<br>
+                                                — предметы личной гигиены (зуб. щётка, паста и т.д.)<br>
+                                                — банные принадлежности (полотенце, мыло, шампунь и т.д.)<br>
+                                                — одежда и обувь для занятия спортом;<br>
+                                                — принадлежности для бассейна (плавки/купальник, шапочка, шлёпки).<br>
+                                            </p>
+                                        </div>
+                                        <div class="etnomir-list">
+                                            <h4 class="etnomir-list__title">
+                                                С собой необходимо взять следующие документы:
+                                            </h4>
+                                            <p class="etnomir-list__text">
+                                                1. Медицинская справка 079у с отметками о перенесённых заболеваниях и
+                                                прививках<br>
+                                                2. Справка об отсутствии контактов с инфекционными больными с пометкой
+                                                об отсутствии
+                                                контактов с больными covid-19,
+                                                полученная не ранее 29 декабря<br>
+                                                3. Справка для бассейна 083/4-89<br>
+                                                4. Копия свидетельства о рождении (если есть 14 лет, то копия
+                                                паспорта)<br>
+                                                5. Копия медицинского полиса<br>
+                                                6. Согласие на оказание мед. помощи (желательно)<br>
+                                                7. Заполненная доверенность на ребёнка: оригинал нужно взять с собой в
+                                                лагерь, фото
+                                                или
+                                                скан выслать до начала смены на
+                                                адрес <b>mmmf.camp@gmail.com</b><br>
+                                                (Доверенность скачать)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </article>
+
             </section>
         </main>
+        <script src="./../js/box-filter.js"></script>
         <script src="./../js/traveling-schools.js"></script>
     </div>
 </body>

@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./../styles/css/online-schools.css">
+    <link rel="stylesheet" href="./styles/css/navbar.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Выездные школы МММФ</title>
 </head>
@@ -54,6 +55,7 @@
             <!--from here-->
             <section class="content">
                 <nav class="article-nav">
+
                     <button class="nav-btn" id="btn-math-tiger">
                         <p class="nav-btn__text">
                             Онлайн-школа «Math Tiger»
@@ -69,23 +71,25 @@
                             Нематематические онлайн кружки
                         </p>
                     </button>
-                    <button class="nav-btn" id="btn-online-groups">
+                    <button class="nav-btn" id="btn-online-group">
                         <p class="nav-btn__text">
-                            Онлайн-группы подготовки к ЕГЭ
+                            Онлайн интенсив
                         </p>
                     </button>
+                    <!--
                     <button class="nav-btn" id="btn-online-games">
                         <p class="nav-btn__text">
                             Онлайн игры
                         </p>
                     </button>
+                    -->
                 </nav>
                 <!--and here-->
-                <article class="article">
+                <article class="article math-tiger">
                     <h2 class="article__title">
                         Онлайн-школа “маth tiger”
                     </h2>
-                    <div class="article-content">
+                    <div class="article-content tiger-apply">
                         <p class="article__paragraph">
                             Олимпиадная математика сейчас вызывает огромный интерес у детей школьного возраста и их
                             родителей. И это не удивительно.
@@ -110,6 +114,7 @@
                             ценность.
                         </p>
                         <div class="article__img"></div>
+
                     </div>
                     <a href="#" class="article-about">
                         <div class="article-about__text">
@@ -124,9 +129,600 @@
                         </div>
                     </a>
                 </article>
+                <article class="article math-courses">
+                    <h2 class="article__title">
+                        Математические кружки
+                    </h2>
+                    <div class="article-content courses">
 
+                        <p class="article__paragraph">
+                            Объявляется набор на онлайн кружки олимпиадной математики.<br> Кружки будут
+                            проходить в Zoom, численность
+                            учебных групп 8-12 человек. Формат проведения кружков максимально приближен к очным занятиям
+                            Малого мехмата.
+                            <br>
+                            Предполагается наличие домашнего задания и его разбор преподавателем на следующем уроке.
+
+                        </p>
+                        <div class="sheulde">
+                            <div class="sheulde-header">
+                                <p class="sheulde-header__title">
+                                    Расписание
+                                </p>
+                                <p class="sheulde-header__subtitle">
+                                    (Выберите свой класс)
+                                </p>
+                            </div>
+                            <div class="sheulde-main">
+                                <nav class="sheulde-nav">
+                                    <a class="sheulde-nav__btn clicked" datacategory="1">
+                                        1 класс
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="2">
+                                        2 класс
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="3">
+                                        3 класс
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="4">
+                                        4 класс
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="5">
+                                        5 класс
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="6">
+                                        6 класс
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="7">
+                                        7 класс
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="8">
+                                        8 класс
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="9">
+                                        9 класс
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="10">
+                                        10-11 класс
+                                    </a>
+                                </nav>
+                                <div class="sheulde-box">
+                                    <div class="sheulde-group" datafilter="1">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Суббота
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Первая половина дня</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Воскресенье
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="sheulde-group" datafilter="2">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Суббота
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Первая половина дня</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Воскресенье
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="3">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Среда
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Пятница
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Суббота
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Первая половина дня</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Воскресенье
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="4">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Суббота
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Первая и вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Воскресенье
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Первая и вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="5">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Суббота
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Воскресенье
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Первая и вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="6">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Суббота
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Первая и вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Воскресенье
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Первая и вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="7">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Суббота
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Первая половина дня</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Воскресенье
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="8">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Воскресенье
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="9">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Воскресенье
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Олимпиадная математика
+                                                <br>
+                                                <strong>Вторая половина дня</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="10">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Суббота
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                Подготовка к ЕГЭ
+                                                <br>
+                                                <strong>16:30 — 18:00</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="article unmath">
+                    <h2 class="article__title">
+                        Нематематические кружки
+                    </h2>
+                    <div class="article-content courses">
+                        <div class="article__img"></div>
+                        <div class="sheulde">
+                            <div class="sheulde-header">
+                                <p class="sheulde-header__title">
+                                    Расписание
+                                </p>
+                                <p class="sheulde-header__subtitle">
+                                    (Выберите предмет)
+                                </p>
+                            </div>
+                            <div class="sheulde-main unmath">
+                                <nav class="sheulde-nav">
+                                    <a class="sheulde-nav__btn clicked" datacategory="physiks">
+                                        Физика
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="chemistry">
+                                        Химия
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="biology">
+                                        Биология
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="icpc">
+                                        Олимпиадное<br>программирование
+                                    </a>
+                                    <a class="sheulde-nav__btn" datacategory="ultra-physiks">
+                                        Экспериментальная<br>физика
+                                    </a>
+                                </nav>
+                                <div class="sheulde-box">
+                                    <div class="sheulde-group" datafilter="physiks">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Суббота
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                3 — 4 классы
+                                                <br>
+                                                <strong>16:50 – 18:20</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Преподаватель
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                <b style="font-weight: 600;">Засыпкин<br>Сергей<br>Александрович</b>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="sheulde-group" datafilter="chemistry">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Суббота
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                5 — 6 классы
+                                                <br>
+                                                <strong>17:00 — 18:30</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Преподаватель
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                <b style="font-weight: 600;">Панова<br>Людмила<br>Викторовна</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="biology">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Суббота
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                3 — 6 классы
+                                                <br>
+                                                <strong>09:00 — 10:30</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Преподаватель
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                <b style="font-weight: 600;">Малыгин<br>Василий<br>Михайлович</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="icpc">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Вторник
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                7 — 9 классы
+                                                <br>
+                                                <strong>15:00 — 16:30</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Преподаватель
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                <b style="font-weight: 600;">Федотова<br>Наталья<br>Петровна</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="ultra-physiks">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Воскресенье
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                3 — 6 классы
+                                                <br>
+                                                <strong>12:00 — 13:00</strong>
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Преподаватель
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                <b style="font-weight: 600;"> Твардовская<br>Елена</b>
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+                <article class="article online-group">
+                    <h2 class="article__title">
+                        Летний онлайн интенсив 2021
+
+                    </h2>
+                    <div class="article-content courses">
+
+                        <p class="article__paragraph">
+                            Приглашаем Вас и Ваших детей принять участие в летнем математическом онлайн интенсиве
+                            выездных школ МММФ 2021года.<br>
+                            За время проведения лагеря у ребят будет десять учебных дней: будние дни — учебные, выходные
+                            — нет.
+                            <br>
+                            Все встречи будут происходить на платформе Zoom.
+                            <br>
+                            Мы разработали и успели опробовать отличную методику преподавания математики на этой
+                            платформе.
+                            <br>
+                            И мы уверены (знаем это из собственной практики), что результаты онлайн обучения оказываются
+                            ничуть не хуже, а иногда
+                            даже лучше, чем результаты живого обучения.
+                        </p>
+                        <div class="sheulde">
+                            <div class="sheulde-header">
+                                <p class="sheulde-header__title">
+                                    Расписание смен
+                                </p>
+                                <p class="sheulde-header__subtitle">
+
+                                </p>
+                            </div>
+                            <div class="sheulde-main online-groups">
+                                <div class="sheulde-box">
+                                    <div class="sheulde-group" datafilter="physiks">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Первая смена
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                с 31 мая по 11 июня
+
+
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Преподаватели
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                <b style="font-weight: 600;">Коробицын<br>Дмитрий<br>Александрович</b>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="sheulde-group" datafilter="chemistry">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Вторая смена
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                с 14 июня по 25 июня
+
+                                            </p>
+                                        </div>
+                                        <div class="sheulde-item">
+                                            <p class="sheulde-item__subtitle">
+                                                <b style="font-weight: 600;">Засыпкина<br>Ирина<br>Сергеевна</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="biology">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Третья смена
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                с 28 июня по 09 июля
+
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="sheulde-group" datafilter="icpc">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Четвертая смена
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                с 12 июля по 23 июля
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="ultra-physiks">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Пятая смена
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                с 26 июля по 06 августа
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sheulde-group" datafilter="ultra-physiks">
+                                        <div class="sheulde-item">
+                                            <h3 class="sheulde-item__title">
+                                                Шестая смена
+                                            </h3>
+                                            <p class="sheulde-item__subtitle">
+                                                с 09 августа по 20 августа
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="price-list">
+                                    <h4 class="price-list__title">
+                                        Стоимость онлайн смен
+                                    </h4>
+                                    <div class="list">
+                                        <div class="list-column list-column-gray">
+                                            <div class="price-description">
+                                                <h4 class="price-description__title">Стоимость для 1-4 классов</h4>
+
+
+
+                                            </div>
+                                            <div class="list-column__white-line"></div>
+                                            <div class="cost">
+                                                <h4 class="cost__title">
+                                                    17 000 ₽
+                                                </h4>
+
+                                            </div>
+                                        </div>
+                                        <div class="list-column list-column-white">
+                                            <div class="price-description">
+                                                <h4 class="price-description__title">Стоимость для 5-10 классов</h4>
+
+
+                                            </div>
+                                            <div class="list-column__gray-line"></div>
+                                            <div class="cost">
+                                                <h4 class="cost__title">
+                                                    22 000 ₽
+                                                </h4>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <p class="moreinfo">
+                                        По всем вопросам онлайн смены пишите нам на e-mail: info.online.camp@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
             </section>
             <script src="./../js/online-schools.js"></script>
+            <script src="./../js/sheulde.js"></script>
         </main>
     </div>
 </body>
