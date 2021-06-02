@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ChiefSlider CSS -->
+    <link rel="stylesheet" href="./styles/css/chief-slider.min.css">
+    <!-- ChiefSlider JavaScript -->
+    <script defer src="./js/chief-slider.js"></script>
     <link href="//db.onlinewebfonts.com/c/3dd6e9888191722420f62dd54664bc94?family=Myriad+Pro" rel="stylesheet"
         type="text/css">
     <link rel="stylesheet" href="./styles/css/main.css">
+    <script src="./js/slider.js"></script>
     <title>hnoco</title>
 </head>
 
@@ -15,55 +20,54 @@
     <header class="header">
         <div class="contacts">
             <div class="tel">
-                <img src="./img/tel-icon.png" alt="telephone img" class="tel__img">
+                <img src="./img/028-telephone-2.png" alt="telephone img" class="tel__img">
                 <div class="tel__number">
                     +7 (926) 645 23 98
                 </div>
             </div>
             <div class="mail">
-                <img src="./img/mail-icon.png" alt="mail img" class="mail__img">
+                <img src="./img/025-arroba.png" alt="mail img" class="mail__img">
                 <div class="mail__number">
                     info@hnonco.ru
                 </div>
             </div>
         </div>
         <a href="#" class="account-link">
-            Личный кабинет
+            <button class="bnt-link">Личный кабинет</button>
+
         </a>
     </header>
-    <section class="navigation">
-        <img src="./img/logo.png" alt="logo" class="logo">
-        <nav class="nav">
-            <a href="#" class="nav__link clicked">Главная</a>
-            <a href="#" class="nav__link">Членство</a>
-            <a href="#" class="nav__link">Мероприятия</a>
-            <a href="#" class="nav__link">Пациенту</a>
-            <a href="#" class="nav__link">Специалисту</a>
-            <a href="#" class="nav__link">Вебинары</a>
-            <a href="#" class="nav__link">Новости</a>
-            <a href="#" class="nav__link">Статьи</a>
-        </nav>
-    </section>
+    <nav class="navigation">
+        <img src="./img/logo.png" alt="logo" class="navigation__logo">
+
+        <a href="#" class="navigation__link clicked">Главная</a>
+        <a href="#" class="navigation__link">Членство</a>
+        <a href="#" class="navigation__link">Мероприятия</a>
+        <a href="#" class="navigation__link">Пациенту</a>
+        <a href="#" class="navigation__link">Специалисту</a>
+        <a href="#" class="navigation__link">Вебинары</a>
+        <a href="#" class="navigation__link">Новости</a>
+        <a href="#" class="navigation__link">Статьи</a>
+    </nav>
     <section class="content">
-        <div class="slider">
-            <div class="slider__container">
-                <div class="slider__wrapper">
-                    <div class="slider__items">
-                        <div class="slider__item">
-                            <!-- Контент 1 слайда -->
-                        </div>
-                        <div class="slider__item">
-                            <!-- Контент 2 слайда -->
-                        </div>
-                        <div class="slider__item">
-                            <!-- Контент 3 слайда -->
-                        </div>
-                    </div>
-                </div>
+        <div class="content-intro">
+            <div class="intro-img"> </div>
+            <div class="intro-offer">
+                <h3 class="intro-offer__title">
+                    ВСТУПИТЬ В ОБЩЕСТВО
+                </h3>
+                <p class="intro-offer__subtitle">
+                    Членство в обществе<br>
+                    дает широкие возможности специалистам,<br>
+                    которые занимаются лечением<br>
+                    опухолей головы и шеи<br>
+                </p>
+                <button class="intro-offer__btn">
+                    <p class="intro-offer__btn-text">ВСТУПИТЬ</p>
+
+                </button>
             </div>
-            <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-            <a href="#" class="slider__control" data-slide="prev"></a>
-            <a href="#" class="slider__control" data-slide="next"></a>
+
         </div>
         <div class="content-main">
             <div class="content-group">
@@ -249,11 +253,17 @@
                     </div>
                 </section>
             </div>
+            <div class="line">
+            </div>
             <aside class="content-group">
                 <h5 class="content-group__title">
                     СТРАНИЦЫ КОМПАНИЙ ПАРТНЕРОВ
                 </h5>
+
                 <div class="partners-video">
+                    <h6 class="partners-video__text">
+                        ВИДЕОМАТЕРИАЛЫ ПАРТНЕРОВ
+                    </h6>
                     <div class="partner-video">
                         <h6 class="partner-video__title">
                             merck
@@ -315,7 +325,7 @@
             </aside>
         </div>
     </section>
-
+    <footer class="footer"></footer>
 </body>
 
 </html>
