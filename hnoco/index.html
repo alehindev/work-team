@@ -49,14 +49,25 @@
         <img src="./img/logo.png" alt="logo" class="navigation__logo">
 
         <a href="#" class="navigation__link clicked-link">Главная</a>
-        <a href="#" class="navigation__link">Годовой отчёт</a>
+        <a href="#" class="navigation__link">Годовой отчёт 2020</a>
         <a href="#" class="navigation__link">Мероприятия</a>
-        <a href="#" class="navigation__link">Пациенту</a>
-        <a href="#" class="navigation__link">Специалисту</a>
-        <a href="#" class="navigation__link">Вебинары</a>
+        <a href="#" class="navigation__link link-delete">Пациенту</a>
+        <a href="#" class="navigation__link link-delete">Специалисту</a>
+        <a href="#" class="navigation__link link-delete">Вебинары</a>
+
+        <button class="navigation__btn link-add" id="nav__btn">Партнёры</button>
+        <div class="navigation__container-links navigation__container-unactive">
+            <h6 class="navigation__title">Страницы компаний партнёров</h6>
+            <a href="#" class="navigation__link">Merck</a>
+            <a href="#" class="navigation__link">MSD</a>
+            <a href="#" class="navigation__link">Brystol</a>
+            <a href="#" class="navigation__link">Микросан Озон</a>
+            <h6 class="navigation__title">Видеоматериалы компаний партнёров</h6>
+        </div>
         <a href="#" class="navigation__link">Новости</a>
         <a href="#" class="navigation__link">Статьи</a>
         <a href="#" class="navigation__link">Членство</a>
+
     </nav>
 
     <section class="content">
@@ -357,7 +368,7 @@
                     </h6>
                     <div class="partner-video">
                         <h6 class="partner-video__title merck">
-                            Merk
+                            Merck
                         </h6>
                         <iframe class="partner-video__iframe" width="560" height="315"
                             src="https://www.youtube.com/embed/0UIRRcX-kuA" title="YouTube video player" frameborder="0"
@@ -421,8 +432,8 @@
                     <button class="info-nav__btn" datafilter="main">
                         <p>ГЛАВНАЯ</p>
                     </button>
-                    <button class="info-nav__btn clicked" datafilter="report2020">
-                        <p>ОТЧЁТ 2020</p>
+                    <button class="info-nav__btn" datafilter="report2020">
+                        <p>ГОДОВОЙ ОТЧЁТ 2020</p>
                     </button>
                     <button class="info-nav__btn" datafilter="events">
                         <p>МЕРОПРИЯТИЯ</p>
@@ -454,12 +465,6 @@
                         <h6 class="info-object__title">КОМПАНИИ-ПАРТНЕРЫ ОБЩЕСТВА</h6>
                         <a href="#" class="info-object__link">Микросан Озон</a>
                     </div>
-                    <div class="info-object" datacategory="main">
-                        <h6 class="info-object__title">ГЛАВНАЯ</h6>
-                    </div>
-                    <div class="info-object" datacategory="about-us">
-                        <h6 class="info-object__title">О НАС</h6>
-                    </div>
                 </div>
             </div>
             <img src="./img/catalog.png" alt="catalog png" class="catalog__img">
@@ -467,11 +472,12 @@
     </section>
     <footer class="footer"></footer>
 </body>
+<script src="./js/navigation-container.js"></script>
 <script src="./js/wow.min.js"></script>
 <script>
     new WOW().init();
 </script>
-<script src="./js/box-filter.js"></script>
 <script src="./js/fadeIn.js"></script>
+<script src="./js/box-filter.js"></script>
 
 </html>
