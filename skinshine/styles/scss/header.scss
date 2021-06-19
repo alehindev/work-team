@@ -1,0 +1,44 @@
+@import url("./../css/normalize.css");
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        max-height: 150px;
+    }
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+		&__label {
+            font-size: 1.2*18px;
+            line-height: 1.2*16px;
+            margin-right: 1.2*4*5px;   
+		}
+    margin-left: 1.2*4*5px;
+    
+            margin-right: 1.2*4*5px;
+    min-width: 350px;
+}
+.label-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+		&__img {
+            height: 1.2*14px;
+            margin-right: 1.2*5px;
+		}
+    
+}
+.navigation-flex-start {
+    justify-content: flex-start;
+}
