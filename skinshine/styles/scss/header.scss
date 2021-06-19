@@ -1,32 +1,39 @@
 @import url("./../css/normalize.css");
+@import url("./../css/relative-fonts.css");
 
-body{
-    font-family: 'Playfair Display', serif;
-}
-
+$rf: 18;
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding-top: 20/$rf*1rem;
+    padding-bottom: 20/$rf*1rem;
+    display: grid;
+    grid-template-columns: 1fr 20% 1fr;
+
     align-items: center;
     &__logo{
-        max-height: 150px;
+        max-height: 150/$rf*1rem;
     }
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-color: transparent;
+    border-bottom: #000;
+    border-style: solid;
 }
 .navigation {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: center;
 		&__label {
-            font-size: 1.2*18px;
-            line-height: 1.2*16px;
-            margin-right: 1.2*4*5px;   
+            font-size: 30/$rf*1rem;
+            font-weight:  400;
+            text-transform: uppercase;
+           
+             
 		}
-    margin-left: 1.2*4*5px;
+    margin-left: 50/$rf*1rem;
     
-            margin-right: 1.2*4*5px;
-    min-width: 350px;
+            margin-right: 50/$rf*1rem;
+    min-width: 350/$rf*1rem;
 }
 .label-img {
     display: flex;
@@ -34,11 +41,8 @@ body{
     justify-content: center;
     align-items: flex-end;
 		&__img {
-            height: 1.2*14px;
-            margin-right: 1.2*5px;
+            height: 0.7*40/$rf*1rem;
+            margin-right: 1.2*5/$rf*1rem;
 		}
     
-}
-.navigation-flex-start {
-    justify-content: flex-start;
 }
