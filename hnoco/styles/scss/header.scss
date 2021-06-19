@@ -1,0 +1,128 @@
+$rf: 18;
+html {
+    font-size: 12px;
+    @media screen and (min-width: 1px) and (max-width: 359px) {
+        font-size: 9px;
+    }   
+    @media screen and (min-width: 360px) and (max-width: 450px) {
+        font-size: 12px;
+    }
+    @media screen and (min-width: 451px) and (max-width: 599px) {
+        font-size: 14px;
+    }
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        font-size: 15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1090px) {
+        font-size: 9px;
+    }
+	@media screen and (min-width: 1090px) and (max-width: 1209px) {
+        font-size: 10px;
+    }
+    @media screen and (min-width: 1210px) and (max-width: 1300px) {
+        font-size: 11px;
+    }
+    @media screen and (min-width: 1301px) and (max-width: 1400px) {
+        font-size: 12px;
+    }
+	@media screen and (min-width: 1401px) and (max-width: 1500px) {
+        font-size: 12px;
+
+    }
+    @media screen and (min-width: 1501px) and (max-width: 1600px) {
+        font-size: 13px;
+
+    }
+    @media screen and (min-width: 1601px) and (max-width: 1700px)  {
+        font-size: 14px;
+
+    }
+    @media screen and (min-width: 1700px) and (max-width: 1800px) {
+        font-size: 15px;
+    }
+    @media screen and (min-width: 1800px) and (max-width: 11930px) {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+	font-size: 1rem;
+	font-weight: 400;
+	font-family:'Myriad Pro','Courier New', Courier, monospace;
+	color: #6d6464;
+	background-color: #f7f5f5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f7f5f5;
+	height: 75/$rf*1rem;
+}
+.contacts {
+	margin-left: 0.64*40/$rf*1rem;
+    display: flex;
+    flex-direction: row;
+}
+.tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-right: 0.64*65/$rf*1rem;
+		&__img {
+            width: 1rem;
+            height: auto;
+			margin-right: 10/$rf*1rem;
+		}
+
+		&__number {
+            font-size: 1rem;
+            font-weight: 400;
+            font-family:'Myriad Pro','Courier New', Courier, monospace;
+            color: #6d6464;
+		}
+}
+.mail {
+
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-right: 15/$rf*1rem;
+		&__img {
+            width: 1rem;
+            height: auto;
+			margin-right: 10/$rf*1rem;
+		}
+
+		&__number {
+            font-size: 1rem;
+            font-weight: 400;
+            font-family:'Myriad Pro','Courier New', Courier, monospace;
+            color: #6d6464;
+		}
+
+}
+
+.bnt-link {
+	width: auto;
+    height: 0.64*76/$rf*1rem;	
+    background-color: #253f78;
+	border-color: transparent;
+	border-width: 0px;
+    color: white;
+	padding: 0rem 0.64*64/$rf*1rem;
+	margin-right: 0.64*40/$rf*1rem;
+	font-size: 	23/$rf*1rem;
+	text-transform: uppercase;
+}
+
+.account-link {
+	outline: none;
+    text-decoration: none;
+
+}

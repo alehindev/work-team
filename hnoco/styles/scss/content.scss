@@ -434,15 +434,12 @@
 	.content-group {
 
 			&__title {
-				margin:  0rem 0rem 0.64*30/$rf*1rem 0rem;
+				margin:  0rem 0rem 0.64*50/$rf*1rem 0rem;
 				font-weight: bold;
 				font-size: 0.64*40/$rf*1rem;
 				color:#253f78;
-				background-color: transparent;
 				outline: none;
-				border-width: 0px;
-				border-style: none;
-				border-color: transparent;
+				background-color: transparent;
 			}
 	}
 	.news {
@@ -507,7 +504,6 @@
 			}
 	}
 	.video {
-		
 			margin-top: 0.64*100/$rf*1rem;
 			&__title {
 				font-weight: bold;
@@ -522,9 +518,7 @@
 				width: 100%;
 				height: 0.64*700/$rf*1rem;
 			}
-			
 	}
-	
 	.articles {
 			margin-top: 0.64*100/$rf*1rem;
 			margin-bottom: 0.64*150/$rf*1rem;
@@ -535,22 +529,20 @@
 				color:#253f78;
 			}
 	}
-	.content-group__title{
-		position: relative;
+	.partners-video {
+		&__text{
+			margin: 0rem;
+			
+			font-weight: bold;
+			font-size: 0.64*51/$rf*1rem;
+			color:#253f78;
+		}
 	}
-	.content-group__title:hover::before{
-		content: '';
-		position: absolute;
-		top: 12px;
-		left: -10px;
-		background-color: #253f78;
-		height: 4px;
-		width: 4px;
-		border-radius: 50%;
-	}
-.partners-video {
+	.partners-video {
 		display: none;
-		
+		animation-name: fadeInDownBig;
+				animation-timing-function: ease;
+				animation-duration: 1.5s;
 		&__text{
 			margin: 0rem;
 			
@@ -559,15 +551,14 @@
 			color:#253f78;
 		}
 		&__subtitle{
-            animation-name: fadeInDownBig;
-				animation-timing-function: ease;
-				animation-duration: 1.5s;
 			font-weight: 400;
 		}
 	}
 	.partners-text{
 		display: none;
-		
+		animation-name: fadeInDownBig;
+				animation-timing-function: ease;
+				animation-duration: 1.5s;
 	}
 	.partners-text-active{
 		display: block;
@@ -585,9 +576,6 @@
 			}
 
 			&__iframe {
-                animation-name: fadeInDownBig;
-				animation-timing-function: ease;
-				animation-duration: 1.5s;
 				max-width: 600/$rf*1rem;
 				width: 100%;
 				height: 0.64*385/$rf*1rem;

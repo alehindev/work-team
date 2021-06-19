@@ -186,19 +186,22 @@
                         Новости
                     </h3>
                     <div class="blocks">
-                        <div class="block">
-                            <img src="./img/news.png" alt="news-photo" class="block__img">
-                            <p class="block__data">
-                                01 января 2021 года
-                            </p>
-                            <h5 class="block__title">
-                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
-                            </h5>
-                            <p class="block__subtitle">
-                                Очень редкую и невероятно сложную операцию провели российские специалисты в
-                                онкологическом центре имени Блохина
-                            </p>
-                        </div>
+                        <a href="#" class="blocks__link">
+                            <div class="block">
+
+                                <img src="./img/news.png" alt="news-photo" class="block__img">
+                                <p class="block__data">
+                                    01 января 2021 года
+                                </p>
+                                <h5 class="block__title">
+                                    ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                                </h5>
+                                <p class="block__subtitle">
+                                    Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                    онкологическом центре имени Блохина
+                                </p>
+                            </div>
+                        </a>
                         <div class="block">
                             <img src="./img/news.png" alt="news-photo" class="block__img">
                             <p class="block__data">
@@ -282,7 +285,7 @@
                         СТАТЬИ ДЛЯ СПЕЦИАЛИСТОВ
                     </h3>
                     <div class="blocks">
-                        <div class="block fadeInLeft">
+                        <div class="block">
                             <img src="./img/news.png" alt="news-photo" class="block__img">
                             <p class="block__data">
                                 01 января 2021 года
@@ -366,14 +369,14 @@
             <div class="line">
             </div>
             <aside class="content-group about-partners">
-                <h5 class="content-group__title">
-                    СТРАНИЦЫ КОМПАНИЙ ПАРТНЕРОВ
-                </h5>
+                <button class="content-group__title">
+                    ИНФОРМАЦИЯ О ПАРТНЕРАХ
+                </button>
+                <button class="content-group__title">
+                    ВИДЕОМАТЕРИАЛЫ ПАРТНЕРОВ
+                </button>
+                <div class="partners-video partners-text-active">
 
-                <div class="partners-video">
-                    <h6 class="partners-video__text">
-                        ВИДЕОМАТЕРИАЛЫ ПАРТНЕРОВ
-                    </h6>
                     <div class="partner-video">
                         <h6 class="partner-video__title merck">
                             Merck
@@ -429,8 +432,63 @@
                             allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="partners-text">
-
+                <div class="partners-text partners-text-active">
+                    <div class="partner-video">
+                        <h6 class="partner-video__title merck">
+                            Merck
+                        </h6>
+                        <p class="partner-video__subtile">
+                            SomeInformationabout merck
+                            SomeInformationabout merck
+                            SomeInformationabout merck
+                            SomeInformationabout merck
+                            SomeInformationabout merck
+                        </p>
+                    </div>
+                    <div class="partner-video">
+                        <h6 class="partner-video__title msk">
+                            MSD
+                        </h6>
+                        <p class="partner-video__subtile">
+                            SomeInformationabout merckSomeInformationabout merckSomeInformationabout
+                            merckSomeInformationabout merck
+                        </p>
+                    </div>
+                    <div class="partner-video">
+                        <h6 class="partner-video__title bristol">
+                            Bristol Myers Squibb
+                        </h6>
+                        <p class="partner-video__subtile">
+                            SomeInformationabout merckSomeInformationabout merckSomeInformationabout
+                            merckSomeInformationabout merck
+                        </p>
+                    </div>
+                    <div class="partner-video">
+                        <h6 class="partner-video__title sanofi">
+                            Sanofi
+                        </h6>
+                        <p class="partner-video__subtile">
+                            SomeInformationabout merckSomeInformationabout merckSomeInformationabout
+                            merckSomeInformationabout merck
+                        </p>
+                    </div>
+                    <div class="partner-video">
+                        <h6 class="partner-video__title eisai">
+                            Eisai
+                        </h6>
+                        <p class="partner-video__subtile">
+                            SomeInformationabout merckSomeInformationabout merckSomeInformationabout merck
+                        </p>
+                    </div>
+                    <div class="partner-video">
+                        <h6 class="partner-video__title microsan">
+                            Микросан Озон
+                        </h6>
+                        <p class="partner-video__subtile">
+                            SomeInformationabout merckSomeInformationabout merckSomeInformationabout
+                            merckSomeInformationabout merckSomeInformationabout merck
+                        </p>
+                    </div>
                 </div>
             </aside>
         </div>
@@ -480,6 +538,7 @@
     </section>
     <footer class="footer"></footer>
 </body>
+<script src="./js/partenrs-text.js"></script>
 <script src="./js/navigation-container.js"></script>
 <script src="./js/wow.min.js"></script>
 <script>
