@@ -23,7 +23,7 @@ function BoxFilter() {
     };
 
     box_filter_nav.addEventListener('click', function (e) {
-        let target = e.target;
+        let target =x e.target;
         let item = closestItemByClass(target, 'info-nav__btn');
         let new_array = [];
         if (item === null) {

@@ -1,0 +1,128 @@
+$rf: 18;
+
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	padding: 0.5*54/$rf*1rem;
+    
+    background-color: white;
+    border-width: 2px;
+    border-style: none;
+    border-color: rgba(216, 216, 216, 0.4);
+    border-bottom-style: solid;
+}
+.logo {
+        &__img{
+            width: 208/$rf*1rem;
+            height: auto;
+		}
+}
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    	
+        
+		&__link {
+            outline: none;
+            text-decoration: none;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16/$rf*1rem;
+            line-height: 28/$rf*1rem;
+            /* identical to box height, or 175% */
+
+            text-align: center;
+
+            /* second text */
+
+            color: #737373;
+            margin-left: 51/$rf*1rem;
+		}
+}
+.header-icons {
+
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+		&__title {
+            margin:0px;
+
+            margin-left:12/$rf*1rem; 
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16/$rf*1rem;
+            color: #737373;
+		}
+    width: fit-content;
+    margin-right: 20/$rf*1rem;
+}
+.icon-circle {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56/$rf*1rem;
+        height: 56/$rf*1rem;
+        background: rgba(151, 151, 151, 0.4);
+        border: 1/$rf*1rem solid rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
+        border-radius: 50%;
+		&__img {
+            width: fit-content;
+            height: 24/$rf*1rem;
+		}
+
+        &_transparent{
+            background-color: transparent;
+        }
+    }
+
+.mobile-only{
+    display: none;
+}
+.mobile-none{
+    display: flex;
+}
+.active {
+    display: flex;
+}
+.lock{
+    overflow: hidden;
+}
+@media (max-width: 770px)
+ {
+    .mobile-only{
+        display: flex;
+    }
+    .mobile-none {
+        display: none;
+    }
+    .header-nav{
+        display: none;
+    }
+    .active {
+        display: flex;
+    }
+    .header-nav{
+        position: absolute;
+        top: 20/$rf*1rem;
+        left: 0/$rf*1rem;
+    }
+ }
